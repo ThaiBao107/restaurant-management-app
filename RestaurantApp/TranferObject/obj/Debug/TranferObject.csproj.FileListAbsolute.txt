@@ -1,0 +1,6 @@
+D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\bin\Debug\TranferObject.dll
+D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\bin\Debug\TranferObject.pdb
+D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\TranferObject\obj\Debug\TranferObject.csproj.AssemblyReference.cache
+D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\TranferObject\obj\Debug\TranferObject.csproj.CoreCompileInputs.cache
+D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\TranferObject\obj\Debug\TranferObject.dll
+D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\TranferObject\obj\Debug\TranferObject.pdb
