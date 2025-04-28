@@ -7,5 +7,6 @@ namespace CodeFrist.Data
         public MyDBContext(DbContextOptions options) : base(options)
         {
         }
+        public DbSet<NhanVien> NhanViens  { get; set; }
     }
 }

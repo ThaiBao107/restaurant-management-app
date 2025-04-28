@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeFrist")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb89e9e33199c8a4486c2544f726dc4acd2c45ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b794f957b80efd9b44873edb9de216e07dba0519")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeFrist")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeFrist")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
