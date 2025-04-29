@@ -8,3 +8,15 @@ D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\Presenta
 D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presenta.BC777DBE.Up2Date
 D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.exe
 D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.pdb
+D:\LTCSDL\restaurant-management-app\RestaurantApp\bin\Debug\Presentation.exe.config
+D:\LTCSDL\restaurant-management-app\RestaurantApp\bin\Debug\Presentation.exe
+D:\LTCSDL\restaurant-management-app\RestaurantApp\bin\Debug\Presentation.pdb
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.csproj.AssemblyReference.cache
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.Properties.Resources.resources
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.csproj.CoreCompileInputs.cache
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presenta.BC777DBE.Up2Date
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.exe
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.pdb
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.Migrations.Update.resources
+D:\LTCSDL\restaurant-management-app\RestaurantApp\Presentation\obj\Debug\Presentation.Migrations.Update_20_4.resources
