@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{916719FC-58C1-4B03-AE0B-D74680627348}</ProjectGuid>
+    <ProjectGuid>{AAF92697-91B6-48E4-9B61-1DCC38963CF6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BusinessLayer</RootNamespace>
@@ -41,16 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">
-      <Project>{bbc54439-5593-4a39-acdb-0363a75949a0}</Project>
+      <Project>{8995d2ae-7972-4dde-a429-8ba277140518}</Project>
       <Name>DataLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TranferObject\TranferObject.csproj">
-      <Project>{0df4a85e-59f9-419f-85c7-cb051c16ef41}</Project>
-      <Name>TranferObject</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

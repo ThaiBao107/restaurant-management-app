@@ -1,0 +1,10 @@
+D:\LTCSDL\Project\RestaurantApp\bin\Debug\PresentationLayer.exe.config
+D:\LTCSDL\Project\RestaurantApp\bin\Debug\PresentationLayer.exe
+D:\LTCSDL\Project\RestaurantApp\bin\Debug\PresentationLayer.pdb
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\LTCSDL\Project\RestaurantApp\PresentationLayer\obj\Debug\PresentationLayer.pdb

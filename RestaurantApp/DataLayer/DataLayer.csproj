@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BBC54439-5593-4A39-ACDB-0363A75949A0}</ProjectGuid>
+    <ProjectGuid>{8995D2AE-7972-4DDE-A429-8BA277140518}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataLayer</RootNamespace>
@@ -12,6 +13,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,7 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,13 +51,109 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202504301454008_Test123.cs" />
+    <Compile Include="Migrations\202504301454008_Test123.Designer.cs">
+      <DependentUpon>202504301454008_Test123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504301503568_Test456.cs" />
+    <Compile Include="Migrations\202504301503568_Test456.Designer.cs">
+      <DependentUpon>202504301503568_Test456.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504301604549_Update_LSGD.cs" />
+    <Compile Include="Migrations\202504301604549_Update_LSGD.Designer.cs">
+      <DependentUpon>202504301604549_Update_LSGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504301606398_Update_LSGD_SuaTen.cs" />
+    <Compile Include="Migrations\202504301606398_Update_LSGD_SuaTen.Designer.cs">
+      <DependentUpon>202504301606398_Update_LSGD_SuaTen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504301613316_Update_SuaHoaDon.cs" />
+    <Compile Include="Migrations\202504301613316_Update_SuaHoaDon.Designer.cs">
+      <DependentUpon>202504301613316_Update_SuaHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504301617298_Update_ThemMyDbContext.cs" />
+    <Compile Include="Migrations\202504301617298_Update_ThemMyDbContext.Designer.cs">
+      <DependentUpon>202504301617298_Update_ThemMyDbContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202504301701497_Update_ThemMyDbContext_test.cs" />
+    <Compile Include="Migrations\202504301701497_Update_ThemMyDbContext_test.Designer.cs">
+      <DependentUpon>202504301701497_Update_ThemMyDbContext_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\BanAn.cs" />
+    <Compile Include="Model\DonHang.cs" />
+    <Compile Include="Model\DonHangBanAn.cs" />
+    <Compile Include="Model\HoaDon.cs" />
+    <Compile Include="Model\KhachHang.cs" />
+    <Compile Include="Model\LichSuGiaoDich.cs" />
+    <Compile Include="Model\Loai.cs" />
+    <Compile Include="Model\MonAn.cs" />
+    <Compile Include="Model\Nguoi.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\TaiKhoan.cs" />
+    <Compile Include="Model\test.cs" />
+    <Compile Include="MyDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantManagerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TranferObject\TranferObject.csproj">
-      <Project>{0df4a85e-59f9-419f-85c7-cb051c16ef41}</Project>
-      <Name>TranferObject</Name>
-    </ProjectReference>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RestaurantManagerDataSet.xsc">
+      <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantManagerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestaurantManagerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestaurantManagerDataSet.xss">
+      <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202504301454008_Test123.resx">
+      <DependentUpon>202504301454008_Test123.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504301503568_Test456.resx">
+      <DependentUpon>202504301503568_Test456.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504301604549_Update_LSGD.resx">
+      <DependentUpon>202504301604549_Update_LSGD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504301606398_Update_LSGD_SuaTen.resx">
+      <DependentUpon>202504301606398_Update_LSGD_SuaTen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504301613316_Update_SuaHoaDon.resx">
+      <DependentUpon>202504301613316_Update_SuaHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504301617298_Update_ThemMyDbContext.resx">
+      <DependentUpon>202504301617298_Update_ThemMyDbContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504301701497_Update_ThemMyDbContext_test.resx">
+      <DependentUpon>202504301701497_Update_ThemMyDbContext_test.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
 </Project>

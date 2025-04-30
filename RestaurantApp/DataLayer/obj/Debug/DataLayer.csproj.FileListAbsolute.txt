@@ -1,14 +1,23 @@
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\bin\Debug\DataLayer.dll
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\bin\Debug\DataLayer.pdb
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.dll
-D:\LTCSDL\Restaurant Management\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.pdb
-D:\LTCSDL\restaurant-management-app\RestaurantApp\bin\Debug\DataLayer.dll
-D:\LTCSDL\restaurant-management-app\RestaurantApp\bin\Debug\DataLayer.pdb
-D:\LTCSDL\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
-D:\LTCSDL\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
-D:\LTCSDL\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
-D:\LTCSDL\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.dll
-D:\LTCSDL\restaurant-management-app\RestaurantApp\DataLayer\obj\Debug\DataLayer.pdb
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\DataLayer.dll.config
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\DataLayer.dll
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\DataLayer.pdb
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\EntityFramework.dll
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\EntityFramework.xml
+D:\LTCSDL\Project\RestaurantApp\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.dll
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.pdb
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Test123.resources
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Test456.resources
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Update_LSGD.resources
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Update_LSGD_SuaTen.resources
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Update_SuaHoaDon.resources
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Update_ThemMyDbContext.resources
+D:\LTCSDL\Project\RestaurantApp\DataLayer\obj\Debug\DataLayer.Migrations.Update_ThemMyDbContext_test.resources
+D:\LTCSDL\Project\RestaurantApp\bin\Debug\DataLayer.dll.config
+D:\LTCSDL\Project\RestaurantApp\bin\Debug\DataLayer.dll
+D:\LTCSDL\Project\RestaurantApp\bin\Debug\DataLayer.pdb
