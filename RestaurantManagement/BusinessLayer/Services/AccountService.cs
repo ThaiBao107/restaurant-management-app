@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.DTOs;
 using DataLayer;
+using DataLayer.Repositories;
 using RestaurantManagement.DAL;
 using RestaurantManagement.DAL.Models;
 
@@ -12,16 +13,16 @@ namespace BusinessLayer.Services
 {
     public class AccountService
     {
-        private readonly RestaurantDbContext _context;
+        private readonly Repository<StaffAccount> _context;
 
         public AccountService()
         {
-            _context = new RestaurantDbContext();
+            _context = new Repository<StaffAccount>();
         }
 
         public AccountDTO Login(string username, string password)
         {
-            var user =  _context.StaffAccounts.FirstOrDefault(a => a.Username == username && a.Password == password);
+            var user =  _context.GetAll().FirstOrDefault(a => a.Username == username && a.Password == password);
             if (user == null)
                 return null;
             return new AccountDTO

@@ -5,10 +5,11 @@ namespace RestaurantManagement.DAL.Models
 {
     public class OrderDetail
     {
-        [Key, Column(Order = 0)]
+        [Key]
+        public int OrderDetailID { get; set; }
+        [ForeignKey("Order")]
         public int OrderID { get; set; }
-
-        [Key, Column(Order = 1)]
+        [ForeignKey("Product")]
         public int ProductID { get; set; }
 
         [Required, Range(1, int.MaxValue, ErrorMessage = "Quantity must be at least 1")]

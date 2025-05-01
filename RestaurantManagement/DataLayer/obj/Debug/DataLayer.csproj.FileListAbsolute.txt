@@ -10,6 +10,5 @@ D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.c
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.dll
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.pdb
-D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.updateStaffShift.resources
+D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.Create.resources
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
-D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.updateTableArea.resources
