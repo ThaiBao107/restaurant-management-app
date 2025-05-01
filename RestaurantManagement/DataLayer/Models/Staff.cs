@@ -13,6 +13,19 @@ namespace RestaurantManagement.DAL.Models
         Chef
     }
 
+    public enum Sex
+    {
+        Male,
+        Female
+    }
+
+    public enum Shift
+    {
+        Morning,
+        Noon,
+        Eveving
+    }
+
     public class Staff
     {
         [Key]
@@ -26,6 +39,12 @@ namespace RestaurantManagement.DAL.Models
 
         [Required]
         public StaffRole Role { get; set; }
+
+        [Required]
+        public Sex Sex { get; set; } = Sex.Male;
+
+        [Required]
+        public Shift Shift { get; set; } = Shift.Morning;
 
         [Phone, StringLength(10)]
         public string Phone { get; set; }

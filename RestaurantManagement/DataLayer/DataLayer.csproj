@@ -52,9 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Migrations\202504301343183_TaoBang.cs" />
-    <Compile Include="Migrations\202504301343183_TaoBang.Designer.cs">
-      <DependentUpon>202504301343183_TaoBang.cs</DependentUpon>
+    <Compile Include="Migrations\202505011040191_update Staff Shift.cs" />
+    <Compile Include="Migrations\202505011040191_update Staff Shift.Designer.cs">
+      <DependentUpon>202505011040191_update Staff Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202505011051065_update Table Area.cs" />
+    <Compile Include="Migrations\202505011051065_update Table Area.Designer.cs">
+      <DependentUpon>202505011051065_update Table Area.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -86,8 +90,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202504301343183_TaoBang.resx">
-      <DependentUpon>202504301343183_TaoBang.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505011040191_update Staff Shift.resx">
+      <DependentUpon>202505011040191_update Staff Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505011051065_update Table Area.resx">
+      <DependentUpon>202505011051065_update Table Area.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

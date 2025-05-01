@@ -9,6 +9,11 @@ public enum TableStatus
     Reserved
 }
 
+public enum Area
+{
+    G,L1,L2,L3
+}
+
 public class Table
 {
     [Key]
@@ -17,8 +22,10 @@ public class Table
     [Required, StringLength(10)]
     public string TableNumber { get; set; }
 
-    [Required]
     public int Capacity { get; set; }
+
+    [Required]
+    public Area Area { get; set; } = Area.G;
 
     [Required]
     public TableStatus Status { get; set; } = TableStatus.Available;
