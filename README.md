@@ -2,4 +2,5 @@
 2. Nuget DataLayer \
 a. Install-packed EntityFramwork \
 b. Enable-Migrations \
-c. Update-Database 
+c. Add-Migration "Create"
+d. Update-Database
