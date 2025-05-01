@@ -1,57 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\restaurant-management-app\\RestaurantApp\\",
+  "WorkspaceRootPath": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\restaurant-management-app\\restaurantapp\\presentation\\migrations\\202504291926365_update_20_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\migrations\\202504291926365_update_20_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\migrations\\202504291926365_update_20_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\migrations\\202504291924014_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\migrations\\202504291924014_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\migrations\\202504291924014_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\model\\banan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\model\\banan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\model\\banan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|D:\\restaurant-management-app\\RestaurantApp\\presentation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantapp\\presentation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3C420D8E-5EFE-4D40-905A-D917A36CF8A9}|Presentation\\Presentation.csproj|solutionrelative:presentation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -61,31 +61,50 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 121,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 379,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 121,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "NhanVien.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\NhanVien.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\NhanVien.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\NhanVien.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\NhanVien.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\NhanVien.cs",
               "RelativeToolTip": "Presentation\\Model\\NhanVien.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAACkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T17:27:33.693Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "202504291926365_Update_20_4.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291926365_Update_20_4.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291926365_Update_20_4.cs",
               "RelativeDocumentMoniker": "Presentation\\Migrations\\202504291926365_Update_20_4.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291926365_Update_20_4.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291926365_Update_20_4.cs",
               "RelativeToolTip": "Presentation\\Migrations\\202504291926365_Update_20_4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T19:26:41.299Z",
               "EditorCaption": ""
@@ -94,132 +113,153 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "202504291924014_Update.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291924014_Update.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291924014_Update.cs",
               "RelativeDocumentMoniker": "Presentation\\Migrations\\202504291924014_Update.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291924014_Update.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\202504291924014_Update.cs",
               "RelativeToolTip": "Presentation\\Migrations\\202504291924014_Update.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T19:24:06.078Z"
+              "WhenOpened": "2025-04-29T19:24:06.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "HoaDon.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\HoaDon.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\HoaDon.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\HoaDon.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\HoaDon.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\HoaDon.cs",
               "RelativeToolTip": "Presentation\\Model\\HoaDon.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAywAwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T18:27:01.162Z"
+              "WhenOpened": "2025-04-29T18:27:01.162Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Nguoi.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\Nguoi.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\Nguoi.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\Nguoi.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\Nguoi.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\Nguoi.cs",
               "RelativeToolTip": "Presentation\\Model\\Nguoi.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T18:10:13.125Z"
+              "WhenOpened": "2025-04-29T18:10:13.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "KhachHang.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\KhachHang.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\KhachHang.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\KhachHang.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\KhachHang.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\KhachHang.cs",
               "RelativeToolTip": "Presentation\\Model\\KhachHang.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T17:54:47.229Z"
+              "WhenOpened": "2025-04-29T17:54:47.229Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "MyDbContext.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\MyDbContext.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\MyDbContext.cs",
               "RelativeDocumentMoniker": "Presentation\\MyDbContext.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\MyDbContext.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\MyDbContext.cs",
               "RelativeToolTip": "Presentation\\MyDbContext.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAewBMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T17:31:36.958Z"
+              "WhenOpened": "2025-04-29T17:31:36.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "DonHang.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\DonHang.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\DonHang.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\DonHang.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\DonHang.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\DonHang.cs",
               "RelativeToolTip": "Presentation\\Model\\DonHang.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAywA4AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T18:17:50.337Z"
+              "WhenOpened": "2025-04-29T18:17:50.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "TaiKhoan.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\TaiKhoan.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\TaiKhoan.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\TaiKhoan.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\TaiKhoan.cs",
               "RelativeToolTip": "Presentation\\Model\\TaiKhoan.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T17:57:58.44Z"
+              "WhenOpened": "2025-04-29T17:57:58.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "BanAn.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\BanAn.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\BanAn.cs",
               "RelativeDocumentMoniker": "Presentation\\Model\\BanAn.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\BanAn.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Model\\BanAn.cs",
               "RelativeToolTip": "Presentation\\Model\\BanAn.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAmwBgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T18:19:42.285Z"
+              "WhenOpened": "2025-04-29T18:19:42.285Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Configuration.cs",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\Configuration.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\Configuration.cs",
               "RelativeDocumentMoniker": "Presentation\\Migrations\\Configuration.cs",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\Configuration.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Migrations\\Configuration.cs",
               "RelativeToolTip": "Presentation\\Migrations\\Configuration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T17:34:09.21Z"
+              "WhenOpened": "2025-04-29T17:34:09.21Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "App.config",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\App.config",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\App.config",
               "RelativeDocumentMoniker": "Presentation\\App.config",
-              "ToolTip": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\App.config",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\App.config",
               "RelativeToolTip": "Presentation\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAByAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-29T17:16:59.281Z"
+              "WhenOpened": "2025-04-29T17:16:59.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\restaurant-management-app\\RestaurantApp\\Presentation\\Form1.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Form1.cs",
               "RelativeDocumentMoniker": "Presentation\\Form1.cs",
               "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\..\\LTCSDL\\restaurant-management-app\\RestaurantApp\\Presentation\\Form1.cs [Design]",
+              "RelativeToolTip": "Presentation\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T17:17:19.416Z"
+              "WhenOpened": "2025-04-28T17:17:19.416Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 150,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }
