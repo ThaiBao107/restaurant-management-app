@@ -25,12 +25,23 @@ namespace BusinessLayer.Services
             var user =  _context.GetAll().FirstOrDefault(a => a.Username == username && a.Password == password);
             if (user == null)
                 return null;
+            USER = user.Username;
             return new AccountDTO
             {
                 AccountID = user.AccountID,
                 Username = user.Username,
                 StaffID = user.StaffID
             };
+        }
+
+
+        //Create property for username
+        public static string user;
+
+        public static string USER
+        {
+            get { return user; }
+            private set { user = value; }
         }
     }
 }

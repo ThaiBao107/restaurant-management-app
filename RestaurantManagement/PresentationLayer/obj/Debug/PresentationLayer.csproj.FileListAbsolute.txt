@@ -21,3 +21,4 @@ D:\RestaurantManagement\PresentationLayer\bin\Debug\EntityFramework.xml
 D:\RestaurantManagement\PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\RestaurantManagement\PresentationLayer\bin\Debug\DataLayer.pdb
 D:\RestaurantManagement\PresentationLayer\bin\Debug\DataLayer.dll.config
+D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmHome.resources

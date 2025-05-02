@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,32 @@ namespace PresentationLayer.Forms
         public frmMain()
         {
             InitializeComponent();
+        }
+
+        //Method to add Controls in Main form
+
+        public void AddControls(Form f)
+        {
+            pnlCenter.Controls.Clear();
+            f.Dock = DockStyle.Fill;
+            f.TopLevel = false;
+            pnlCenter.Controls.Add(f);
+            f.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblUser.Text = AccountService.USER;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmHome());
         }
     }
 }
