@@ -1,6 +1,5 @@
-1. Replace connection string in App.config DataLayer
-2. Nuget DataLayer \
-a. Install-packed EntityFramwork \
-b. Enable-Migrations \
-c. Add-Migration "Create" \
-d. Update-Database
+1. Create new database name "RestaurantDB" in your SSMS.
+2. Open project > Tools > NuGet Package Manager:
+   ```bash
+   Update-Database
+   ```
