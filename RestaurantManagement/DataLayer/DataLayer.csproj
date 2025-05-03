@@ -51,9 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202505011715150_Create.cs" />
-    <Compile Include="Migrations\202505011715150_Create.Designer.cs">
-      <DependentUpon>202505011715150_Create.cs</DependentUpon>
+    <Compile Include="Migrations\202505031530198_create table.cs" />
+    <Compile Include="Migrations\202505031530198_create table.Designer.cs">
+      <DependentUpon>202505031530198_create table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -86,11 +86,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505011715150_Create.resx">
-      <DependentUpon>202505011715150_Create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505031530198_create table.resx">
+      <DependentUpon>202505031530198_create table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
