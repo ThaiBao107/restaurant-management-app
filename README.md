@@ -3,3 +3,12 @@
    ```bash
    Update-Database
    ```
+3. Defaut account: \
+   username:
+   ```bash
+   admin
+   ```
+   password:
+   ```bash
+   Admin@123
+   ```
