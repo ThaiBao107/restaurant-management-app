@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class TaoBang : DbMigration
+    public partial class createproject : DbMigration
     {
         public override void Up()
         {
@@ -34,23 +34,18 @@
                 .Index(t => t.CategoryID);
             
             CreateTable(
-                "dbo.OrderDetails",
+                "dbo.Customers",
                 c => new
                     {
-                        OrderID = c.Int(nullable: false),
-                        ProductID = c.Int(nullable: false),
-                        Quantity = c.Int(nullable: false),
-                        UnitPrice = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        Product_ProductID = c.Int(nullable: false),
-                        Product_ProductID1 = c.Int(),
+                        CustomerID = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(maxLength: 50),
+                        LastName = c.String(maxLength: 50),
+                        Phone = c.String(maxLength: 10),
+                        Email = c.String(maxLength: 100),
+                        Address = c.String(maxLength: 255),
+                        LoyaltyPoints = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => new { t.OrderID, t.ProductID })
-                .ForeignKey("dbo.Orders", t => t.OrderID, cascadeDelete: true)
-                .ForeignKey("dbo.Products", t => t.Product_ProductID)
-                .ForeignKey("dbo.Products", t => t.Product_ProductID1)
-                .Index(t => t.OrderID)
-                .Index(t => t.Product_ProductID)
-                .Index(t => t.Product_ProductID1);
+                .PrimaryKey(t => t.CustomerID);
             
             CreateTable(
                 "dbo.Orders",
@@ -76,46 +71,20 @@
                 .Index(t => t.PromotionID);
             
             CreateTable(
-                "dbo.Customers",
+                "dbo.OrderDetails",
                 c => new
                     {
-                        CustomerID = c.Int(nullable: false, identity: true),
-                        FirstName = c.String(maxLength: 50),
-                        LastName = c.String(maxLength: 50),
-                        Phone = c.String(maxLength: 10),
-                        Email = c.String(maxLength: 100),
-                        Address = c.String(maxLength: 255),
-                        LoyaltyPoints = c.Int(nullable: false),
+                        OrderDetailID = c.Int(nullable: false, identity: true),
+                        OrderID = c.Int(nullable: false),
+                        ProductID = c.Int(nullable: false),
+                        Quantity = c.Int(nullable: false),
+                        UnitPrice = c.Decimal(nullable: false, precision: 18, scale: 2),
                     })
-                .PrimaryKey(t => t.CustomerID);
-            
-            CreateTable(
-                "dbo.Reservations",
-                c => new
-                    {
-                        ReservationID = c.Int(nullable: false, identity: true),
-                        CustomerID = c.Int(nullable: false),
-                        TableID = c.Int(nullable: false),
-                        ReservationTime = c.DateTime(nullable: false),
-                        NumberOfGuests = c.Int(nullable: false),
-                        Status = c.Int(nullable: false),
-                    })
-                .PrimaryKey(t => t.ReservationID)
-                .ForeignKey("dbo.Customers", t => t.CustomerID, cascadeDelete: true)
-                .ForeignKey("dbo.Tables", t => t.TableID, cascadeDelete: true)
-                .Index(t => t.CustomerID)
-                .Index(t => t.TableID);
-            
-            CreateTable(
-                "dbo.Tables",
-                c => new
-                    {
-                        TableID = c.Int(nullable: false, identity: true),
-                        TableNumber = c.String(nullable: false, maxLength: 10),
-                        Capacity = c.Int(nullable: false),
-                        Status = c.Int(nullable: false),
-                    })
-                .PrimaryKey(t => t.TableID);
+                .PrimaryKey(t => t.OrderDetailID)
+                .ForeignKey("dbo.Orders", t => t.OrderID, cascadeDelete: true)
+                .ForeignKey("dbo.Products", t => t.ProductID)
+                .Index(t => t.OrderID)
+                .Index(t => t.ProductID);
             
             CreateTable(
                 "dbo.Promotions",
@@ -139,12 +108,43 @@
                         FirstName = c.String(nullable: false, maxLength: 50),
                         LastName = c.String(nullable: false, maxLength: 50),
                         Role = c.Int(nullable: false),
+                        Sex = c.Int(nullable: false),
+                        Shift = c.Int(nullable: false),
                         Phone = c.String(maxLength: 10),
                         Email = c.String(maxLength: 100),
                         HireDate = c.DateTime(nullable: false),
                         Salary = c.Double(nullable: false),
                     })
                 .PrimaryKey(t => t.StaffID);
+            
+            CreateTable(
+                "dbo.Tables",
+                c => new
+                    {
+                        TableID = c.Int(nullable: false, identity: true),
+                        TableNumber = c.String(nullable: false, maxLength: 10),
+                        Capacity = c.Int(nullable: false),
+                        Area = c.Int(nullable: false),
+                        Status = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.TableID);
+            
+            CreateTable(
+                "dbo.Reservations",
+                c => new
+                    {
+                        ReservationID = c.Int(nullable: false, identity: true),
+                        CustomerID = c.Int(nullable: false),
+                        TableID = c.Int(nullable: false),
+                        ReservationTime = c.DateTime(nullable: false),
+                        NumberOfGuests = c.Int(nullable: false),
+                        Status = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.ReservationID)
+                .ForeignKey("dbo.Customers", t => t.CustomerID, cascadeDelete: true)
+                .ForeignKey("dbo.Tables", t => t.TableID, cascadeDelete: true)
+                .Index(t => t.CustomerID)
+                .Index(t => t.TableID);
             
             CreateTable(
                 "dbo.Ingredients",
@@ -191,38 +191,36 @@
         {
             DropForeignKey("dbo.StaffAccounts", "StaffID", "dbo.Staffs");
             DropForeignKey("dbo.Ingredients", "SupplierID", "dbo.Suppliers");
-            DropForeignKey("dbo.OrderDetails", "Product_ProductID1", "dbo.Products");
-            DropForeignKey("dbo.OrderDetails", "Product_ProductID", "dbo.Products");
             DropForeignKey("dbo.Orders", "TableID", "dbo.Tables");
-            DropForeignKey("dbo.Orders", "StaffID", "dbo.Staffs");
-            DropForeignKey("dbo.Orders", "PromotionID", "dbo.Promotions");
-            DropForeignKey("dbo.OrderDetails", "OrderID", "dbo.Orders");
-            DropForeignKey("dbo.Orders", "CustomerID", "dbo.Customers");
             DropForeignKey("dbo.Reservations", "TableID", "dbo.Tables");
             DropForeignKey("dbo.Reservations", "CustomerID", "dbo.Customers");
+            DropForeignKey("dbo.Orders", "StaffID", "dbo.Staffs");
+            DropForeignKey("dbo.Orders", "PromotionID", "dbo.Promotions");
+            DropForeignKey("dbo.OrderDetails", "ProductID", "dbo.Products");
+            DropForeignKey("dbo.OrderDetails", "OrderID", "dbo.Orders");
+            DropForeignKey("dbo.Orders", "CustomerID", "dbo.Customers");
             DropForeignKey("dbo.Products", "CategoryID", "dbo.Categories");
             DropIndex("dbo.StaffAccounts", new[] { "StaffID" });
             DropIndex("dbo.Ingredients", new[] { "SupplierID" });
             DropIndex("dbo.Reservations", new[] { "TableID" });
             DropIndex("dbo.Reservations", new[] { "CustomerID" });
+            DropIndex("dbo.OrderDetails", new[] { "ProductID" });
+            DropIndex("dbo.OrderDetails", new[] { "OrderID" });
             DropIndex("dbo.Orders", new[] { "PromotionID" });
             DropIndex("dbo.Orders", new[] { "StaffID" });
             DropIndex("dbo.Orders", new[] { "TableID" });
             DropIndex("dbo.Orders", new[] { "CustomerID" });
-            DropIndex("dbo.OrderDetails", new[] { "Product_ProductID1" });
-            DropIndex("dbo.OrderDetails", new[] { "Product_ProductID" });
-            DropIndex("dbo.OrderDetails", new[] { "OrderID" });
             DropIndex("dbo.Products", new[] { "CategoryID" });
             DropTable("dbo.StaffAccounts");
             DropTable("dbo.Suppliers");
             DropTable("dbo.Ingredients");
+            DropTable("dbo.Reservations");
+            DropTable("dbo.Tables");
             DropTable("dbo.Staffs");
             DropTable("dbo.Promotions");
-            DropTable("dbo.Tables");
-            DropTable("dbo.Reservations");
-            DropTable("dbo.Customers");
-            DropTable("dbo.Orders");
             DropTable("dbo.OrderDetails");
+            DropTable("dbo.Orders");
+            DropTable("dbo.Customers");
             DropTable("dbo.Products");
             DropTable("dbo.Categories");
         }
