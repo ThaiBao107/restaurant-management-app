@@ -10,7 +10,8 @@ namespace RestaurantManagement.DAL.Models
         Manager,
         Waiter,
         Cashier,
-        Chef
+        Chef,
+        Cleaner
     }
 
     public enum Sex
@@ -22,7 +23,7 @@ namespace RestaurantManagement.DAL.Models
     public enum Shift
     {
         Morning,
-        Noon,
+        Afternoon,
         Eveving
     }
 
