@@ -1,12 +1,516 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\RestaurantManagement\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|d:\\ltcsdl\\restaurant-management-app\\restaurantmanagement\\presentationlayer\\forms\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\thanhtoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\view\\ucproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\view\\ucproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\view\\ucproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\view\\ucproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\businesslayer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\thanhtoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\thanhtoan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\businesslayer\\dtos\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\dtos\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\datalayer\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmpos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmpos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\view\\ucproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\view\\ucproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\datalayer\\restaurantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\restaurantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\businesslayer\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\datalayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\businesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D5B4E876-164B-4CB0-82C9-4CA8465D791B}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\restaurantmanagerdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\restaurantmanagerdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmpos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmpos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\forms\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\presentationlayer\\resources\\thanhtoan.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{FE415D34-FD0D-435C-BAEC-D38AE97434FD}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\resources\\thanhtoan.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\datalayer\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\datalayer\\migrations\\202505040904580_create database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\migrations\\202505040904580_create database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\datalayer\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE32ECAE-58AC-42C1-ADA5-63C4F9A85C48}|DataLayer\\DataLayer.csproj|solutionrelative:datalayer\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1111,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThanhToan.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\ThanhToan.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\ThanhToan.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\ThanhToan.cs",
+              "RelativeToolTip": "PresentationLayer\\Forms\\ThanhToan.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAuwDMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:03:29.647Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThanhToan.cs [Design]",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\ThanhToan.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\ThanhToan.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\ThanhToan.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Forms\\ThanhToan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:37:11.742Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThanhToan.Designer.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\ThanhToan.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\ThanhToan.Designer.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\ThanhToan.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\Forms\\ThanhToan.Designer.cs",
+              "ViewState": "AQIAAKYBAAAAAAAAAAAiwLwBAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T14:55:00.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Services\\AccountService.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\Services\\AccountService.cs",
+              "RelativeToolTip": "BusinessLayer\\Services\\AccountService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAuwBoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:08:39.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ucProduct.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\View\\ucProduct.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\View\\ucProduct.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\View\\ucProduct.cs",
+              "RelativeToolTip": "PresentationLayer\\View\\ucProduct.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAACUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T18:56:07.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucProduct.cs [Design]",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\View\\ucProduct.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\View\\ucProduct.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\View\\ucProduct.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\View\\ucProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T18:50:03.49Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Repositories\\Repository.cs",
+              "RelativeToolTip": "DataLayer\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:35:34.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriesDTO.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\DTOs\\CategoriesDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\DTOs\\CategoriesDTO.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\DTOs\\CategoriesDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\DTOs\\CategoriesDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:49:28.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ucProduct.Designer.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\View\\ucProduct.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\View\\ucProduct.Designer.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\View\\ucProduct.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\View\\ucProduct.Designer.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAiwFgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T18:56:14.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmPOS.cs [Design]",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmPOS.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmPOS.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmPOS.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmPOS.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:04:11.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\App.config",
+              "RelativeDocumentMoniker": "PresentationLayer\\App.config",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\App.config",
+              "RelativeToolTip": "PresentationLayer\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-04T08:51:34.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountDTO.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\DTOs\\AccountDTO.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\DTOs\\AccountDTO.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\DTOs\\AccountDTO.cs",
+              "RelativeToolTip": "BusinessLayer\\DTOs\\AccountDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:09:01.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RestaurantDbContext.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\RestaurantDbContext.cs",
+              "RelativeDocumentMoniker": "DataLayer\\RestaurantDbContext.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\RestaurantDbContext.cs",
+              "RelativeToolTip": "DataLayer\\RestaurantDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T08:54:17.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmLogin.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmLogin.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmLogin.cs",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmLogin.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:08:10.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Program.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Program.cs",
+              "RelativeToolTip": "PresentationLayer\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAywBMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:39:06.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmLogin.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmLogin.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmLogin.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:08:09.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\App.config",
+              "RelativeDocumentMoniker": "DataLayer\\App.config",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\App.config",
+              "RelativeToolTip": "DataLayer\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-04T08:59:42.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\App.config",
+              "RelativeDocumentMoniker": "BusinessLayer\\App.config",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\BusinessLayer\\App.config",
+              "RelativeToolTip": "BusinessLayer\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-04T17:07:12.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RestaurantManagerDataSet.xsd",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\RestaurantManagerDataSet.xsd",
+              "RelativeDocumentMoniker": "PresentationLayer\\RestaurantManagerDataSet.xsd",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\RestaurantManagerDataSet.xsd",
+              "RelativeToolTip": "PresentationLayer\\RestaurantManagerDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-05-04T14:29:24.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "PresentationLayer\\Properties\\Resources.resx",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Properties\\Resources.resx",
+              "RelativeToolTip": "PresentationLayer\\Properties\\Resources.resx",
+              "ViewState": "AQIAAAAAAAAAAAAAAIAzwL0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-04T16:15:34.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmMain.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmMain.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmMain.cs",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmMain.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:00:13.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmPOS.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmPOS.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmPOS.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmPOS.cs",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmPOS.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA+wB8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:28:28.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frmHome.cs [Design]",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmHome.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmHome.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmHome.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:07:22.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmMain.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmMain.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmMain.cs [Design]",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:54:19.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "frmMain.Designer.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmMain.Designer.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Forms\\frmMain.Designer.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Forms\\frmMain.Designer.cs",
+              "RelativeToolTip": "PresentationLayer\\Forms\\frmMain.Designer.cs",
+              "ViewState": "AQIAAEgBAAAAAAAAAAAiwFUBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:02:14.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "thanhtoan.png",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Resources\\thanhtoan.png",
+              "RelativeDocumentMoniker": "PresentationLayer\\Resources\\thanhtoan.png",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\PresentationLayer\\Resources\\thanhtoan.png",
+              "RelativeToolTip": "PresentationLayer\\Resources\\thanhtoan.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-04T13:11:53.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Models\\Product.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Models\\Product.cs",
+              "RelativeToolTip": "DataLayer\\Models\\Product.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA+wA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:24:48.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "202505040904580_Create DataBase.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Migrations\\202505040904580_Create DataBase.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Migrations\\202505040904580_Create DataBase.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Migrations\\202505040904580_Create DataBase.cs",
+              "RelativeToolTip": "DataLayer\\Migrations\\202505040904580_Create DataBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:05:02.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "DataLayer\\Migrations\\Configuration.cs",
+              "ToolTip": "D:\\LTCSDL\\restaurant-management-app\\RestaurantManagement\\DataLayer\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "DataLayer\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:04:52.501Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1045,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

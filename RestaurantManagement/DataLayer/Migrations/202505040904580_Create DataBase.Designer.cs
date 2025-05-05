@@ -7,13 +7,13 @@ namespace DataLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class createtable : IMigrationMetadata
+    public sealed partial class CreateDataBase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(createtable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateDataBase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202505031530198_create table"; }
+            get { return "202505040904580_Create DataBase"; }
         }
         
         string IMigrationMetadata.Source

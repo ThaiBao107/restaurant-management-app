@@ -22,10 +22,12 @@ namespace PresentationLayer.Forms
 
         public void AddControls(Form f)
         {
-            pnlCenter.Controls.Clear();
-            f.Dock = DockStyle.Fill;
             f.TopLevel = false;
+            pnlCenter.Controls.Clear();
             pnlCenter.Controls.Add(f);
+
+            f.Dock = DockStyle.Fill;
+            f.FormBorderStyle = FormBorderStyle.None;
             f.Show();
         }
 
@@ -43,5 +45,12 @@ namespace PresentationLayer.Forms
         {
             AddControls(new frmHome());
         }
+
+        private void btnPOS_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmPOS());
+        }
+
+       
     }
 }

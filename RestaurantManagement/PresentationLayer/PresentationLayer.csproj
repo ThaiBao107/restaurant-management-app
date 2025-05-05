@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -80,12 +80,35 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPOS.Designer.cs">
+      <DependentUpon>frmPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RestaurantDataSet.Designer.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantManagerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="View\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -96,16 +119,20 @@
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPOS.resx">
+      <DependentUpon>frmPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="View\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,16 +143,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RestaurantDataSet.xsc">
-      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    <None Include="RestaurantManagerDataSet.xsc">
+      <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
     </None>
-    <None Include="RestaurantDataSet.xsd">
+    <None Include="RestaurantManagerDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>RestaurantDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>RestaurantManagerDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="RestaurantDataSet.xss">
-      <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
+    <None Include="RestaurantManagerDataSet.xss">
+      <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +165,10 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{d5b4e876-164b-4cb0-82c9-4ca8465d791b}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TranferObject\TranferObject.csproj">
+      <Project>{2ae67dce-61dc-4e20-9bd0-1014068ed13b}</Project>
+      <Name>TranferObject</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +194,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Setting_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donhang.jpg" />
+    <None Include="Resources\billl.png" />
+    <None Include="Resources\nuoc.png" />
+    <None Include="Resources\hu.jpg" />
+    <None Include="Resources\monnuoc.jpg" />
+    <None Include="Resources\5470230.png" />
+    <None Include="Resources\banh.jpg" />
+    <Content Include="Resources\nuocepduahau.jpg" />
+    <None Include="Resources\taodonhang.png" />
+    <None Include="Resources\pizza.jpg" />
+    <None Include="Resources\sup.png" />
+    <None Include="Resources\sup1.jpg" />
+    <None Include="Resources\Nuoc\nuocepduahau.jpg" />
+    <Content Include="Resources\thanhtoan.png" />
+    <Content Include="Resources\tiramisu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
