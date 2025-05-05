@@ -51,3 +51,32 @@ D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\D
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\PresentationLayer.exe.config
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\PresentationLayer.exe
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\PresentationLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\BusinessLayer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\EntityFramework.dll
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\Guna.UI2.dll
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\DataLayer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\BusinessLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\BusinessLayer.dll.config
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\EntityFramework.xml
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\DataLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\bin\Debug\DataLayer.dll.config
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmCategories_CategoryAdd.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmCategories_CategoryModify.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmCategories_SampleAdd.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmCategories_CategoryView.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmCategories_SampleView.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmHome.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmLogin.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmMain.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\Ky thuat lap trinh\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb

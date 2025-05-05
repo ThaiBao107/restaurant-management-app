@@ -28,3 +28,18 @@ D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\DataLayer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\EntityFramework.dll
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\DataLayer.pdb
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\DataLayer.dll.config
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\EntityFramework.xml
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\Ky thuat lap trinh\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
