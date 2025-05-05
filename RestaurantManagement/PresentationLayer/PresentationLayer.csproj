@@ -62,28 +62,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmCategoryAdd.cs">
+    <Compile Include="Adds\frmCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmCategoryAdd.Designer.cs">
+    <Compile Include="Adds\frmCategoryAdd.Designer.cs">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmStaffAdd.cs">
+    <Compile Include="Adds\frmProductAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmStaffAdd.Designer.cs">
+    <Compile Include="Adds\frmProductAdd.Designer.cs">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adds\frmStaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmStaffAdd.Designer.cs">
       <DependentUpon>frmStaffAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmTableAdd.cs">
+    <Compile Include="Adds\frmTableAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmTableAdd.Designer.cs">
+    <Compile Include="Adds\frmTableAdd.Designer.cs">
       <DependentUpon>frmTableAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SampleAdd.cs">
+    <Compile Include="Adds\SampleAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SampleAdd.Designer.cs">
+    <Compile Include="Adds\SampleAdd.Designer.cs">
       <DependentUpon>SampleAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmHome.cs">
@@ -117,6 +123,12 @@
     <Compile Include="Views\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmProductView.Designer.cs">
+      <DependentUpon>frmProductView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmStaffView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,16 +147,19 @@
     <Compile Include="Views\SampleView.Designer.cs">
       <DependentUpon>SampleView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\frmCategoryAdd.resx">
+    <EmbeddedResource Include="Adds\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmStaffAdd.resx">
+    <EmbeddedResource Include="Adds\frmProductAdd.resx">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmStaffAdd.resx">
       <DependentUpon>frmStaffAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmTableAdd.resx">
+    <EmbeddedResource Include="Adds\frmTableAdd.resx">
       <DependentUpon>frmTableAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SampleAdd.resx">
+    <EmbeddedResource Include="Adds\SampleAdd.resx">
       <DependentUpon>SampleAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHome.resx">
@@ -168,6 +183,9 @@
     </Compile>
     <EmbeddedResource Include="Views\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmProductView.resx">
+      <DependentUpon>frmProductView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmStaffView.resx">
       <DependentUpon>frmStaffView.cs</DependentUpon>
@@ -245,6 +263,7 @@
   <ItemGroup>
     <None Include="Resources\Delete_S.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

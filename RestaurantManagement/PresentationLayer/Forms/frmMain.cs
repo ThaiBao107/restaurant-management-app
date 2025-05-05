@@ -59,5 +59,10 @@ namespace PresentationLayer.Forms
         {
             AddControls(new frmStaffView());
         }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmProductView());
+        }
     }
 }

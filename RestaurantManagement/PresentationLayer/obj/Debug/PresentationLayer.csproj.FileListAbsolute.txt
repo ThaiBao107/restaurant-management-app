@@ -30,3 +30,5 @@ D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmT
 D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Views.frmTableView.resources
 D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmStaffAdd.resources
 D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Views.frmStaffView.resources
+D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmProductAdd.resources
+D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Views.frmProductView.resources

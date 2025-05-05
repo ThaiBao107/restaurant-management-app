@@ -53,8 +53,7 @@ namespace RestaurantManagement.DAL.Models
         [EmailAddress, StringLength(100)]
         public string Email { get; set; }
 
-        [Required]
-        public DateTime HireDate { get; set; }
+        public DateTime HireDate { get; set; } = DateTime.Now;
 
         [Required]
         public double Salary { get; set; }
