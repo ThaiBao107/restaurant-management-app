@@ -72,6 +72,6 @@ D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\D
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmPOS.resources
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.ThanhToan.resources
-D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\bin\Debug\TranferObject.dll
-D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\bin\Debug\TranferObject.pdb
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.View.ucProduct.resources
+D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmTable_ThanhToan.resources
+D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.View.ucTable.resources

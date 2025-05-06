@@ -86,6 +86,12 @@
     <Compile Include="Forms\frmPOS.Designer.cs">
       <DependentUpon>frmPOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmTable_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTable_ThanhToan.Designer.cs">
+      <DependentUpon>frmTable_ThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="View\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ucTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ucTable.Designer.cs">
+      <DependentUpon>ucTable.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +134,9 @@
     <EmbeddedResource Include="Forms\frmPOS.resx">
       <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTable_ThanhToan.resx">
+      <DependentUpon>frmTable_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ucTable.resx">
+      <DependentUpon>ucTable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -165,10 +183,6 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{d5b4e876-164b-4cb0-82c9-4ca8465d791b}</Project>
       <Name>BusinessLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TranferObject\TranferObject.csproj">
-      <Project>{2ae67dce-61dc-4e20-9bd0-1014068ed13b}</Project>
-      <Name>TranferObject</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +223,7 @@
     <None Include="Resources\sup.png" />
     <None Include="Resources\sup1.jpg" />
     <None Include="Resources\Nuoc\nuocepduahau.jpg" />
+    <None Include="Resources\search.jpg" />
     <Content Include="Resources\thanhtoan.png" />
     <Content Include="Resources\tiramisu.jpg" />
   </ItemGroup>

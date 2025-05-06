@@ -55,18 +55,16 @@
     <Compile Include="DTOs\AccountDTO.cs" />
     <Compile Include="DTOs\CategoriesDTO.cs" />
     <Compile Include="DTOs\Products.cs" />
+    <Compile Include="DTOs\Tables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountService.cs" />
     <Compile Include="Services\LoadProducts.cs" />
+    <Compile Include="Services\LoadTables.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">
       <Project>{ce32ecae-58ac-42c1-ada5-63c4f9a85c48}</Project>
       <Name>DataLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TranferObject\TranferObject.csproj">
-      <Project>{2ae67dce-61dc-4e20-9bd0-1014068ed13b}</Project>
-      <Name>TranferObject</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

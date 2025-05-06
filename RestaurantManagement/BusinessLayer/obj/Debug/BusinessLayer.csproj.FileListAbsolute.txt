@@ -43,5 +43,3 @@ D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
-D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\bin\Debug\TranferObject.dll
-D:\LTCSDL\restaurant-management-app\RestaurantManagement\BusinessLayer\bin\Debug\TranferObject.pdb

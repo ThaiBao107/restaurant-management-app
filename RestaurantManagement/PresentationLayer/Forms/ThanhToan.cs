@@ -81,7 +81,7 @@ namespace PresentationLayer.Forms
                         item.Cells["dgvrSL"].Value = int.Parse(item.Cells["dgvrSL"].Value.ToString()) + 1;
                         item.Cells["dgvrTotal"].Value = int.Parse(item.Cells["dgvrSL"].Value.ToString()) *
                         double.Parse(item.Cells["dgvrPrice"].Value.ToString());
-
+                        reloadThanhTien();
                         return ;
                     }
 
@@ -111,13 +111,13 @@ namespace PresentationLayer.Forms
             }
             
         }
+
+
+        
         
        
 
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void ThanhToan_Load(object sender, EventArgs e)
         {
@@ -169,6 +169,48 @@ namespace PresentationLayer.Forms
 
         }
 
-        
+        private void txtSearchProduct_TextChanged(object sender, EventArgs e)
+        {
+            foreach(var item in Productpnl.Controls)
+            {
+                var pro = (ucProduct)item;
+                pro.Visible = pro.Pname.ToLower().Contains(txtSearchProduct.Text.Trim().ToLower());
+            }
+        }
+
+        private void tablebtn_Click(object sender, EventArgs e)
+        {
+            frmTable_ThanhToan f = new frmTable_ThanhToan(this);
+            f.Show();
+            f.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        public void UpdateLabel(String text, int flag)
+        {
+            if (flag == 1)
+            {
+                lbHinhThuc.Text = "Ăn tại quán";
+                lbBanSo.Visible = true;
+                lbBanSo.Text = text;
+
+            }
+            else
+            {
+                lbHinhThuc.Text = "Mua mang về";
+                lbBanSo.Visible = false;
+            }
+            
+            
+        }
+
+        private void takeawaybtn_Click(object sender, EventArgs e)
+        {
+            UpdateLabel("", 2);
+        }
+
+        private void btnTaoDonHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

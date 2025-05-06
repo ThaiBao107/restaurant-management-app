@@ -19,7 +19,7 @@ namespace PresentationLayer.View
             InitializeComponent();
         }
 
-       public int id {  get; set; }
+        public int id {  get; set; }
         public string price { get; set; }
         public string Pname 
         { get

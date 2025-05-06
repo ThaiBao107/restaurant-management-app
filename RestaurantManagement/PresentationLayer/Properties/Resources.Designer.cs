@@ -223,6 +223,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search {
+            get {
+                object obj = ResourceManager.GetObject("search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Setting_S {
             get {
                 object obj = ResourceManager.GetObject("Setting_S", resourceCulture);
@@ -276,6 +286,26 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap Table_S1 {
             get {
                 object obj = ResourceManager.GetObject("Table_S1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Table_S2 {
+            get {
+                object obj = ResourceManager.GetObject("Table_S2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Table_S3 {
+            get {
+                object obj = ResourceManager.GetObject("Table_S3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
