@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Services;
+using PresentationLayer.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,6 +43,26 @@ namespace PresentationLayer.Forms
         private void btnHome_Click(object sender, EventArgs e)
         {
             AddControls(new frmHome());
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmCategoryView());
+        }
+
+        private void btnTables_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmTableView());
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmStaffView());
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmProductView());
         }
     }
 }
