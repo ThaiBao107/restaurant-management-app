@@ -92,6 +92,12 @@
     <Compile Include="Forms\frmTable_ThanhToan.Designer.cs">
       <DependentUpon>frmTable_ThanhToan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmTaoDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTaoDH.Designer.cs">
+      <DependentUpon>frmTaoDH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmTable_ThanhToan.resx">
       <DependentUpon>frmTable_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTaoDH.resx">
+      <DependentUpon>frmTaoDH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>
@@ -225,6 +234,7 @@
     <None Include="Resources\Nuoc\nuocepduahau.jpg" />
     <None Include="Resources\search.jpg" />
     <Content Include="Resources\thanhtoan.png" />
+    <None Include="Resources\them.jpg" />
     <Content Include="Resources\tiramisu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -210,7 +210,18 @@ namespace PresentationLayer.Forms
 
         private void btnTaoDonHang_Click(object sender, EventArgs e)
         {
-
+            frmTaoDH form = new frmTaoDH(lbBanSo.Text.ToString(), lbThanhTien.Text.ToString());
+            DialogResult result = form.ShowDialog();
+            this.Enabled = false;
+            if (result == DialogResult.OK)
+            {
+                this.Enabled = true;
+                MessageBox.Show("Da tao don hang");
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                this.Enabled = true;
+            }
         }
     }
 }
