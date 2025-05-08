@@ -45,7 +45,8 @@ namespace PresentationLayer.Adds
         }
 
         public int id = 0;
-
+        private string customerName;
+        private string customerPhone;
         private void btnOK_Click(object sender, EventArgs e)
         {
             if (id == 0)
@@ -104,6 +105,7 @@ namespace PresentationLayer.Adds
                 {
                     ReservationDTO reservation = new ReservationDTO
                     {
+                        ReservationID = id,
                         CustomerID = Convert.ToInt32(txtCustomerID.Text.Trim()),
                         TableID = Convert.ToInt32(cbTable.SelectedValue.ToString()),
                         ReservationTime = DateTime.Now,

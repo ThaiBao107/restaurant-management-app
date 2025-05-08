@@ -23,6 +23,7 @@ namespace PresentationLayer.Adds
         }
 
         public int id = 0;
+        
 
         private void btnOK_Click(object sender, EventArgs e)
         {
@@ -64,6 +65,7 @@ namespace PresentationLayer.Adds
 
                     CustomerDTO customer = new CustomerDTO
                     {
+                        CustomerID = id,
                         FirstName = txtFirstName.Text.Trim(),
                         LastName = txtLastName.Text.Trim(),
                         Phone = txtPhone.Text.Trim(),

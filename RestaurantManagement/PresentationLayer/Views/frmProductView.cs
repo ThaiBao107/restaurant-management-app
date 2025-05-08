@@ -57,9 +57,9 @@ namespace PresentationLayer.Views
                 frm.txtName.Text = Convert.ToString(dgvProduct.CurrentRow.Cells["ProductName"].Value);
                 frm.txtPrice.Text = Convert.ToString(dgvProduct.CurrentRow.Cells["Price"].Value);
                 frm.SetDescription(Convert.ToString(dgvProduct.CurrentRow.Cells["Description"].Value),
-                    Convert.ToBoolean(dgvProduct.CurrentRow.Cells["IsAvailable"].Value),
-                    Convert.ToString(dgvProduct.CurrentRow.Cells["Image"].Value),
-                    Convert.ToInt32(dgvProduct.CurrentRow.Cells["CategoryID"].Value));
+                Convert.ToBoolean(dgvProduct.CurrentRow.Cells["IsAvailable"].Value),
+                Convert.ToString(dgvProduct.CurrentRow.Cells["Image"].Value),
+                Convert.ToInt32(dgvProduct.CurrentRow.Cells["CategoryID"].Value));
                 DialogResult result = frm.ShowDialog();
                 if (result == DialogResult.OK)
                 {

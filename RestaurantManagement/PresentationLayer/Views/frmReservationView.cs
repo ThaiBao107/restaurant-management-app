@@ -59,7 +59,30 @@ namespace PresentationLayer.Views
 
         private void dgvReservation_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            if (dgvReservation.CurrentCell.OwningColumn.Name == "dgvEdit")
+            {
+                frmReservationAdd frm = new frmReservationAdd();
+
+                // Truyền id để check xem là edit hay delete
+                frm.id = Convert.ToInt32(dgvReservation.CurrentRow.Cells["ReservationID"].Value);
+                frm.txtCustomerID.Text = Convert.ToString(dgvReservation.CurrentRow.Cells["CustomerID"].Value);
+                frm.txtGuest.Text = Convert.ToString(dgvReservation.CurrentRow.Cells["NumberOfGuests"].Value);
+                DialogResult result = frm.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    LoadData();
+                }
+            }
+            if (dgvReservation.CurrentCell.OwningColumn.Name == "dgvDel")
+            {
+                int reservationId = Convert.ToInt32(dgvReservation.CurrentRow.Cells["ReservationID"].Value);
+                DialogResult result = MessageBox.Show($"Bạn đồng ý xóa bàn đặt {reservationId}?", "Xóa bàn đặt", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (result == DialogResult.OK)
+                {
+                    reservationService.DeleteReservation(reservationId);
+                    LoadData();
+                }
+            }
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

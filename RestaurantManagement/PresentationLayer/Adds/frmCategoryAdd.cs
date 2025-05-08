@@ -26,6 +26,8 @@ namespace PresentationLayer.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
+
             if (id == 0)
             {
                 CategoryDTO categoryDTO = new CategoryDTO { CategoryName = txtName.Text };
@@ -59,6 +61,11 @@ namespace PresentationLayer.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmCategoryAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
