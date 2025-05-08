@@ -40,3 +40,5 @@ D:\LTCSDL\restaurant-management-app\RestaurantManagement\DataLayer\obj\Debug\Dat
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\DataLayer\obj\Debug\DataLayer.pdb
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.CreateDataBase.resources
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
+D:\LTCSDL\restaurant-management-app\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.test.resources
+D:\LTCSDL\restaurant-management-app\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.add2.resources

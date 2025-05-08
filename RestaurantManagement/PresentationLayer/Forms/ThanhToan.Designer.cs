@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThanhToan));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThanhToan));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,9 +48,6 @@
             this.supbtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.banhngotbtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Productpnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucProduct1 = new PresentationLayer.View.ucProduct();
-            this.ucProduct2 = new PresentationLayer.View.ucProduct();
-            this.ucProduct3 = new PresentationLayer.View.ucProduct();
             this.dgvTotal = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvrId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvrName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +65,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lbBanSo = new System.Windows.Forms.Label();
             this.btnTaoDonHang = new Guna.UI2.WinForms.Guna2Button();
+            this.ucProduct1 = new PresentationLayer.View.ucProduct();
+            this.ucProduct2 = new PresentationLayer.View.ucProduct();
+            this.ucProduct3 = new PresentationLayer.View.ucProduct();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -298,39 +298,6 @@
             this.Productpnl.Size = new System.Drawing.Size(768, 802);
             this.Productpnl.TabIndex = 4;
             // 
-            // ucProduct1
-            // 
-            this.ucProduct1.id = 0;
-            this.ucProduct1.Location = new System.Drawing.Point(3, 3);
-            this.ucProduct1.Name = "ucProduct1";
-            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
-            this.ucProduct1.Pname = "Product Name";
-            this.ucProduct1.price = null;
-            this.ucProduct1.Size = new System.Drawing.Size(179, 168);
-            this.ucProduct1.TabIndex = 0;
-            // 
-            // ucProduct2
-            // 
-            this.ucProduct2.id = 0;
-            this.ucProduct2.Location = new System.Drawing.Point(188, 3);
-            this.ucProduct2.Name = "ucProduct2";
-            this.ucProduct2.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct2.PImage")));
-            this.ucProduct2.Pname = "Product Name";
-            this.ucProduct2.price = null;
-            this.ucProduct2.Size = new System.Drawing.Size(179, 168);
-            this.ucProduct2.TabIndex = 1;
-            // 
-            // ucProduct3
-            // 
-            this.ucProduct3.id = 0;
-            this.ucProduct3.Location = new System.Drawing.Point(373, 3);
-            this.ucProduct3.Name = "ucProduct3";
-            this.ucProduct3.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct3.PImage")));
-            this.ucProduct3.Pname = "Product Name";
-            this.ucProduct3.price = null;
-            this.ucProduct3.Size = new System.Drawing.Size(179, 168);
-            this.ucProduct3.TabIndex = 2;
-            // 
             // dgvTotal
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -391,6 +358,7 @@
             this.dgvTotal.ThemeStyle.RowsStyle.Height = 24;
             this.dgvTotal.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTotal.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvTotal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTotal_CellContentClick);
             // 
             // dgvrId
             // 
@@ -506,9 +474,8 @@
             this.lbHinhThuc.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.lbHinhThuc.Location = new System.Drawing.Point(1186, 582);
             this.lbHinhThuc.Name = "lbHinhThuc";
-            this.lbHinhThuc.Size = new System.Drawing.Size(23, 25);
+            this.lbHinhThuc.Size = new System.Drawing.Size(0, 25);
             this.lbHinhThuc.TabIndex = 13;
-            this.lbHinhThuc.Text = "0";
             // 
             // label8
             // 
@@ -546,6 +513,39 @@
             this.btnTaoDonHang.TabIndex = 16;
             this.btnTaoDonHang.Text = "Tạo đơn hàng";
             this.btnTaoDonHang.Click += new System.EventHandler(this.btnTaoDonHang_Click);
+            // 
+            // ucProduct1
+            // 
+            this.ucProduct1.id = 0;
+            this.ucProduct1.Location = new System.Drawing.Point(3, 3);
+            this.ucProduct1.Name = "ucProduct1";
+            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
+            this.ucProduct1.Pname = "Product Name";
+            this.ucProduct1.price = null;
+            this.ucProduct1.Size = new System.Drawing.Size(179, 168);
+            this.ucProduct1.TabIndex = 0;
+            // 
+            // ucProduct2
+            // 
+            this.ucProduct2.id = 0;
+            this.ucProduct2.Location = new System.Drawing.Point(188, 3);
+            this.ucProduct2.Name = "ucProduct2";
+            this.ucProduct2.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct2.PImage")));
+            this.ucProduct2.Pname = "Product Name";
+            this.ucProduct2.price = null;
+            this.ucProduct2.Size = new System.Drawing.Size(179, 168);
+            this.ucProduct2.TabIndex = 1;
+            // 
+            // ucProduct3
+            // 
+            this.ucProduct3.id = 0;
+            this.ucProduct3.Location = new System.Drawing.Point(373, 3);
+            this.ucProduct3.Name = "ucProduct3";
+            this.ucProduct3.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct3.PImage")));
+            this.ucProduct3.Pname = "Product Name";
+            this.ucProduct3.price = null;
+            this.ucProduct3.Size = new System.Drawing.Size(179, 168);
+            this.ucProduct3.TabIndex = 2;
             // 
             // ThanhToan
             // 

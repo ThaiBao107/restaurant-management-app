@@ -23,6 +23,7 @@ namespace RestaurantManagement.DAL.Models
             this.Status = OrderStatus.Paid;
         }
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderID { get; set; }
 
         [ForeignKey("Customer")]

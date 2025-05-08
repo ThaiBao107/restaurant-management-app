@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using BusinessLayer;
 using BusinessLayer.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using BusinessLayer.DTOs;
 namespace PresentationLayer.Forms
 {
     public partial class frmTaoDH : Form
@@ -23,17 +24,20 @@ namespace PresentationLayer.Forms
         string soTien;
         int idBan;
         int staffID = 0;
-        public frmTaoDH(string soBan, string soTien, int inBAN)
+        List<OrderDetailDTO> ods;
+        public frmTaoDH(string soBan, string soTien, int inBAN, List<OrderDetailDTO> od)
         {
             InitializeComponent();
             this.soBan = soBan;
             this.soTien = soTien;
             this.loadCustomers = new LoadCustomers();   
             this.loadStaffs =   new LoadStaffs();
-            if(soBan == "")
+            if(soBan == "0")
                 this.idBan = 9;
-            this.idBan = inBAN; 
+            else
+                this.idBan = inBAN;
             this.AddOrders = new AddOrders();
+            this.ods = od;
         }
 
         private void frmTaoDH_Load(object sender, EventArgs e)
@@ -63,18 +67,18 @@ namespace PresentationLayer.Forms
             string result = loadCustomers.checkPhone(txtSDT.Text.ToString());
             if(result.Equals("-1"))
             {
-                MessageBox.Show("Khong tim thay khach hang");
+                MessageBox.Show("Không tìm thấy khách hàng");
             }
             else
             {
-                MessageBox.Show("Tim thay khach hang");
+                MessageBox.Show("Tìm thấy khách hàng");
                 txtMAKH.Text = result;
             }
         }
 
         private void comboBoxNV_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(comboBoxNV.SelectedItem.ToString());
+           
 
             this.staffID = int.Parse(comboBoxNV.SelectedItem.ToString());
         }
@@ -167,20 +171,24 @@ namespace PresentationLayer.Forms
             string maKH = txtMAKH.Text.ToString();
             if (maKH == "x") maKH = "3"; 
             int idB = this.idBan;
-            
             int staffid = this.staffID; 
             DateTime orderdate = DateTime.Now;
-            float TotalAmount = int.Parse(this.soTien);
+            float TotalAmount = int.Parse(this.soTien.Replace(" ","").Replace("VND",""));
             int orderstatus = 1;
+            
             if(txtMAKH.Text.ToString() == "" || lbBanSo.Text.ToString() == "" )
             {
-                if (AddOrders.checkOrder(int.Parse(maKH), idB, staffid, orderdate, orderstatus, TotalAmount))
+                MessageBox.Show("Them day du thong tin");
+            }
+            else
+            {
+                if (AddOrders.checkOrder(int.Parse(maKH), idB, staffid, orderdate, orderstatus, TotalAmount, this.ods))
                 {
-                    MessageBox.Show("Them thanh cong");
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
-                    MessageBox.Show("Them that bai");
+                    this.DialogResult = DialogResult.Cancel;
                 }
             }
             

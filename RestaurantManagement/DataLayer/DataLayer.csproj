@@ -55,6 +55,14 @@
     <Compile Include="Migrations\202505040904580_Create DataBase.Designer.cs">
       <DependentUpon>202505040904580_Create DataBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505081637318_test.cs" />
+    <Compile Include="Migrations\202505081637318_test.Designer.cs">
+      <DependentUpon>202505081637318_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202505081815348_add 2.cs" />
+    <Compile Include="Migrations\202505081815348_add 2.Designer.cs">
+      <DependentUpon>202505081815348_add 2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -88,6 +96,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202505040904580_Create DataBase.resx">
       <DependentUpon>202505040904580_Create DataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505081637318_test.resx">
+      <DependentUpon>202505081637318_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505081815348_add 2.resx">
+      <DependentUpon>202505081815348_add 2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

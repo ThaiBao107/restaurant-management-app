@@ -7,16 +7,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics.Tracing;
 using BusinessLayer.DTOs;
+using DataLayer.Repositories;
+using System.Data.SqlClient;
 
 namespace BusinessLayer.Services
 {
     public class LoadProducts
     {
         private readonly RestaurantDbContext context;
+        private readonly Repository<Product> _product;
 
         public LoadProducts()
         {
             this.context = new RestaurantDbContext();
+            this._product = new Repository<Product>();
         }
 
         public List<DTOs.Products> getAllCategories(int categoriesID)
@@ -64,5 +68,7 @@ namespace BusinessLayer.Services
 
 
         }
+
+        
     }
 }

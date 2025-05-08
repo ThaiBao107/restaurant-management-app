@@ -13,7 +13,8 @@ using BusinessLayer.DTOs;
 using BusinessLayer.Services;
 using Guna.UI2.WinForms;
 using PresentationLayer.View;
-
+using BusinessLayer.DTOs;
+using System.IO;
 namespace PresentationLayer.Forms
 {
     public partial class ThanhToan : Form
@@ -114,17 +115,29 @@ namespace PresentationLayer.Forms
         }
 
 
-        
-        
-       
 
-        
+        private Guna2DataGridView CustomDataGridView(Guna2DataGridView dgv)
+        {
+            dgv.Rows.Clear();
+            var path = Directory.GetParent(Application.StartupPath).FullName;
+            DataGridViewImageColumn imageColum = new DataGridViewImageColumn();
+            imageColum.Image = Image.FromFile(path + "\\Image\\thungrac.png");
+            imageColum.ImageLayout = DataGridViewImageCellLayout.Zoom;
+
+            dgv.Columns.Add(imageColum);
+
+            return dgv;
+        }
+
+
+
+
 
         private void ThanhToan_Load(object sender, EventArgs e)
         {
             Productpnl.Controls.Clear();
             LoadProducts("All", -1);
-
+            dgvTotal = CustomDataGridView(dgvTotal);
         }
 
         private void billListbtn_Click(object sender, EventArgs e)
@@ -210,35 +223,80 @@ namespace PresentationLayer.Forms
             UpdateLabel("", 2, -1);
         }
 
-        //private void getDataGridView()
-        //{
-        //    List<Products>
-        //    for (int i = 0; i < dgvTotal.Rows.Count; i++)
-        //    {
-        //        if (dgvTotal.Rows[i].IsNewRow) continue;
-        //        string column1 = dgvTotal.Rows[i].Cells[0].Value?.ToString();
-        //        string column2 = dgvTotal.Rows[i].Cells[1].Value?.ToString();
 
-               
-        //    }
-        //}
+
 
         private void btnTaoDonHang_Click(object sender, EventArgs e)
         {
-            frmTaoDH form = new frmTaoDH(lbBanSo.Text.ToString(), lbThanhTien.Text.ToString(), idBan);
-            DialogResult result = form.ShowDialog();
-            this.Enabled = false;
-            if (result == DialogResult.OK)
+            if(dgvTotal.Rows.Count > 0 && lbHinhThuc.Text.ToString() != "")
             {
-                this.Enabled = true;
-                MessageBox.Show("Da tao don hang");
+                List<OrderDetailDTO> list = new List<OrderDetailDTO>();
+                for (int i = 0; i < dgvTotal.Rows.Count; i++)
+                {
+                    
+                    int id = 0;
+                    string name = "";
+                    int quantity = 0;
+                    decimal amount = 0;
+                    DataGridViewRow dr = dgvTotal.Rows[i];
+                    if (dr.IsNewRow || dr.Cells["dgvrId"].Value == null)
+                        continue;
+                    id = int.Parse(dr.Cells["dgvrId"].Value.ToString());
+                    name = dr.Cells["dgvrName"].Value.ToString();
+                    quantity = int.Parse(dr.Cells["dgvrSL"].Value.ToString());
+                    amount = (decimal)double.Parse(dr.Cells["dgvrTotal"].Value.ToString());
+                    
+                    OrderDetailDTO od = new OrderDetailDTO(id, quantity, amount);
+                    list.Add(od);
+                }
+                frmTaoDH form = new frmTaoDH(lbBanSo.Text.ToString(), lbThanhTien.Text.ToString(), idBan, list);
+                DialogResult result = form.ShowDialog();
+                this.Enabled = false;
+                if (result == DialogResult.OK)
+                {
+                    this.Enabled = true;
+                    MessageBox.Show("Tạo đơn hàng thành công", "Thông báo", MessageBoxButtons.OK);
+                    dgvTotal.Rows.Clear();
+                    lbHinhThuc.Text = "";
+                    lbBanSo.Text = "0";
+                    lbTongTien.Text = "0";  
+                    lbThue.Text = "0";
+                    lbThanhTien.Text = "0";
+
+                }
+                else if (result == DialogResult.Cancel)
+                {
+                    this.Enabled = true;
+                    MessageBox.Show("Tạo đơn hàng thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else if (result == DialogResult.Cancel)
+            else
             {
-                this.Enabled = true;
+                
+                MessageBox.Show("Nhập thông tin đầy đủ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
+        
 
+        private void dgvTotal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int col = e.ColumnIndex;
+            if (dgvTotal.Columns[col] is DataGridViewImageColumn)
+            {
+                int rol = e.RowIndex;
 
+                string id = dgvTotal.Rows[rol].Cells["dgvrId"].Value.ToString();
+                foreach (DataGridViewRow row in dgvTotal.Rows)
+                {
+                    if(int.Parse(id) == int.Parse(row.Cells["dgvrId"].Value.ToString()))
+                    {
+                        dgvTotal.Rows.Remove(row);
+                        break; 
+                    }
+                }
+            }
+            reloadThanhTien();
+        }
     }
 }

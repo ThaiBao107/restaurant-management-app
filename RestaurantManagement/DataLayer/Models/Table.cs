@@ -27,7 +27,7 @@ public class Table
     [Required]
     public Area Area { get; set; } = Area.G;
 
-    [Required]
+   
     public TableStatus Status { get; set; } = TableStatus.Available;
 
     public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();

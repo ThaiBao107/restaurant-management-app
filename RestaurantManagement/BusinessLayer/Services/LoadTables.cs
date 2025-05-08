@@ -21,7 +21,7 @@ namespace BusinessLayer.Services
         {
             try
             {
-                var tables = this.restaurantDbContext.Tables.Select(n =>
+                var tables = this.restaurantDbContext.Tables.Where(t=>t.Status == TableStatus.Occupied).Select(n =>
                 new Tables
                 {
                     id = n.TableID,

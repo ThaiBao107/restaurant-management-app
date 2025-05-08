@@ -1,4 +1,5 @@
 ﻿using RestaurantManagement.DAL;
+using RestaurantManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -49,5 +50,10 @@ namespace DataLayer.Repositories
         {
             _context.SaveChanges();
         }
+        public void Attach(T entity)
+        {
+            _dbSet.Attach(entity);
+        }
+
     }
 }
