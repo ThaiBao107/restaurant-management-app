@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThanhToan));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,6 +48,9 @@
             this.supbtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.banhngotbtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Productpnl = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucProduct1 = new PresentationLayer.View.ucProduct();
+            this.ucProduct2 = new PresentationLayer.View.ucProduct();
+            this.ucProduct3 = new PresentationLayer.View.ucProduct();
             this.dgvTotal = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvrId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvrName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,9 +67,6 @@
             this.lbHinhThuc = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lbBanSo = new System.Windows.Forms.Label();
-            this.ucProduct1 = new PresentationLayer.View.ucProduct();
-            this.ucProduct2 = new PresentationLayer.View.ucProduct();
-            this.ucProduct3 = new PresentationLayer.View.ucProduct();
             this.btnTaoDonHang = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -298,21 +298,54 @@
             this.Productpnl.Size = new System.Drawing.Size(768, 802);
             this.Productpnl.TabIndex = 4;
             // 
+            // ucProduct1
+            // 
+            this.ucProduct1.id = 0;
+            this.ucProduct1.Location = new System.Drawing.Point(3, 3);
+            this.ucProduct1.Name = "ucProduct1";
+            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
+            this.ucProduct1.Pname = "Product Name";
+            this.ucProduct1.price = null;
+            this.ucProduct1.Size = new System.Drawing.Size(179, 168);
+            this.ucProduct1.TabIndex = 0;
+            // 
+            // ucProduct2
+            // 
+            this.ucProduct2.id = 0;
+            this.ucProduct2.Location = new System.Drawing.Point(188, 3);
+            this.ucProduct2.Name = "ucProduct2";
+            this.ucProduct2.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct2.PImage")));
+            this.ucProduct2.Pname = "Product Name";
+            this.ucProduct2.price = null;
+            this.ucProduct2.Size = new System.Drawing.Size(179, 168);
+            this.ucProduct2.TabIndex = 1;
+            // 
+            // ucProduct3
+            // 
+            this.ucProduct3.id = 0;
+            this.ucProduct3.Location = new System.Drawing.Point(373, 3);
+            this.ucProduct3.Name = "ucProduct3";
+            this.ucProduct3.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct3.PImage")));
+            this.ucProduct3.Pname = "Product Name";
+            this.ucProduct3.price = null;
+            this.ucProduct3.Size = new System.Drawing.Size(179, 168);
+            this.ucProduct3.TabIndex = 2;
+            // 
             // dgvTotal
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgvTotal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvTotal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTotal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTotal.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTotal.ColumnHeadersHeight = 34;
             this.dgvTotal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvTotal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -321,14 +354,14 @@
             this.dgvrSL,
             this.dgvrPrice,
             this.dgvrTotal});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTotal.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTotal.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTotal.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTotal.Location = new System.Drawing.Point(977, 15);
             this.dgvTotal.Name = "dgvTotal";
@@ -498,39 +531,6 @@
             this.lbBanSo.Size = new System.Drawing.Size(23, 25);
             this.lbBanSo.TabIndex = 15;
             this.lbBanSo.Text = "0";
-            // 
-            // ucProduct1
-            // 
-            this.ucProduct1.id = 0;
-            this.ucProduct1.Location = new System.Drawing.Point(4, 4);
-            this.ucProduct1.Name = "ucProduct1";
-            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
-            this.ucProduct1.Pname = "Product Name";
-            this.ucProduct1.price = null;
-            this.ucProduct1.Size = new System.Drawing.Size(179, 168);
-            this.ucProduct1.TabIndex = 0;
-            // 
-            // ucProduct2
-            // 
-            this.ucProduct2.id = 0;
-            this.ucProduct2.Location = new System.Drawing.Point(190, 4);
-            this.ucProduct2.Name = "ucProduct2";
-            this.ucProduct2.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct2.PImage")));
-            this.ucProduct2.Pname = "Product Name";
-            this.ucProduct2.price = null;
-            this.ucProduct2.Size = new System.Drawing.Size(179, 168);
-            this.ucProduct2.TabIndex = 1;
-            // 
-            // ucProduct3
-            // 
-            this.ucProduct3.id = 0;
-            this.ucProduct3.Location = new System.Drawing.Point(376, 4);
-            this.ucProduct3.Name = "ucProduct3";
-            this.ucProduct3.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct3.PImage")));
-            this.ucProduct3.Pname = "Product Name";
-            this.ucProduct3.price = null;
-            this.ucProduct3.Size = new System.Drawing.Size(179, 168);
-            this.ucProduct3.TabIndex = 2;
             // 
             // btnTaoDonHang
             // 

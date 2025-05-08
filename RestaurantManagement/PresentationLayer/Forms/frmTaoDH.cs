@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using BusinessLayer;
 using BusinessLayer.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -15,17 +16,24 @@ namespace PresentationLayer.Forms
 {
     public partial class frmTaoDH : Form
     {
+        private AddOrders AddOrders;
         private LoadCustomers loadCustomers;
         private LoadStaffs loadStaffs;
         string soBan;
         string soTien;
-        public frmTaoDH(string soBan, string soTien)
+        int idBan;
+        int staffID = 0;
+        public frmTaoDH(string soBan, string soTien, int inBAN)
         {
             InitializeComponent();
             this.soBan = soBan;
             this.soTien = soTien;
             this.loadCustomers = new LoadCustomers();   
             this.loadStaffs =   new LoadStaffs();
+            if(soBan == "")
+                this.idBan = 9;
+            this.idBan = inBAN; 
+            this.AddOrders = new AddOrders();
         }
 
         private void frmTaoDH_Load(object sender, EventArgs e)
@@ -66,7 +74,9 @@ namespace PresentationLayer.Forms
 
         private void comboBoxNV_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            MessageBox.Show(comboBoxNV.SelectedItem.ToString());
+
+            this.staffID = int.Parse(comboBoxNV.SelectedItem.ToString());
         }
 
       
@@ -149,9 +159,35 @@ namespace PresentationLayer.Forms
             MessageBox.Show("Bạn đã nhấn nút Thanh toán!");
         }
 
+       
+       
+
         private void btnTaoDH_Click(object sender, EventArgs e)
         {
+            string maKH = txtMAKH.Text.ToString();
+            if (maKH == "x") maKH = "3"; 
+            int idB = this.idBan;
+            
+            int staffid = this.staffID; 
+            DateTime orderdate = DateTime.Now;
+            float TotalAmount = int.Parse(this.soTien);
+            int orderstatus = 1;
+            if(txtMAKH.Text.ToString() == "" || lbBanSo.Text.ToString() == "" )
+            {
+                if (AddOrders.checkOrder(int.Parse(maKH), idB, staffid, orderdate, orderstatus, TotalAmount))
+                {
+                    MessageBox.Show("Them thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("Them that bai");
+                }
+            }
+            
+
 
         }
+
+
     }
 }

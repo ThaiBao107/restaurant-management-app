@@ -36,7 +36,7 @@ namespace PresentationLayer.Forms
             k.onSelect += (ss, ee) =>
             {
                 var wdg = (ucTable)ss;
-                currentForm.UpdateLabel(wdg.TNumber, 1);
+                currentForm.UpdateLabel(wdg.TNumber, 1, wdg.id);
                 this.Hide();
             };
         }

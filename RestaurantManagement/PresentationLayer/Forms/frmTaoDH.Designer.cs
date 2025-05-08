@@ -46,7 +46,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.Label();
             this.radioTTTienMat = new System.Windows.Forms.RadioButton();
-            this.radioTTVNPAY = new System.Windows.Forms.RadioButton();
             this.btnTim = new System.Windows.Forms.Button();
             this.comboBoxNV = new System.Windows.Forms.ComboBox();
             this.pnlThanhToan = new System.Windows.Forms.Panel();
@@ -271,7 +270,7 @@
             // 
             this.radioTTTienMat.AutoSize = true;
             this.radioTTTienMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioTTTienMat.Location = new System.Drawing.Point(33, 527);
+            this.radioTTTienMat.Location = new System.Drawing.Point(149, 533);
             this.radioTTTienMat.Name = "radioTTTienMat";
             this.radioTTTienMat.Size = new System.Drawing.Size(178, 24);
             this.radioTTTienMat.TabIndex = 19;
@@ -279,19 +278,6 @@
             this.radioTTTienMat.Text = "Thanh toán tiền mặt";
             this.radioTTTienMat.UseVisualStyleBackColor = true;
             this.radioTTTienMat.CheckedChanged += new System.EventHandler(this.radioTTTienMat_CheckedChanged);
-            // 
-            // radioTTVNPAY
-            // 
-            this.radioTTVNPAY.AutoSize = true;
-            this.radioTTVNPAY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioTTVNPAY.Location = new System.Drawing.Point(265, 527);
-            this.radioTTVNPAY.Name = "radioTTVNPAY";
-            this.radioTTVNPAY.Size = new System.Drawing.Size(214, 24);
-            this.radioTTVNPAY.TabIndex = 20;
-            this.radioTTVNPAY.TabStop = true;
-            this.radioTTVNPAY.Text = "Thanh toán bằng VNPAY";
-            this.radioTTVNPAY.UseVisualStyleBackColor = true;
-            this.radioTTVNPAY.CheckedChanged += new System.EventHandler(this.radioTTVNPAY_CheckedChanged);
             // 
             // btnTim
             // 
@@ -342,7 +328,6 @@
             this.Controls.Add(this.pnlThanhToan);
             this.Controls.Add(this.comboBoxNV);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.radioTTVNPAY);
             this.Controls.Add(this.radioTTTienMat);
             this.Controls.Add(this.txtTongTien);
             this.Controls.Add(this.label7);
@@ -388,7 +373,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label txtTongTien;
         private System.Windows.Forms.RadioButton radioTTTienMat;
-        private System.Windows.Forms.RadioButton radioTTVNPAY;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.ComboBox comboBoxNV;

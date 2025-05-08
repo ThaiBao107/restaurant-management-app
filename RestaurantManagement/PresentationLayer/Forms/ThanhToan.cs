@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
+using BusinessLayer.DTOs;
 using BusinessLayer.Services;
 using Guna.UI2.WinForms;
 using PresentationLayer.View;
@@ -18,7 +19,7 @@ namespace PresentationLayer.Forms
     public partial class ThanhToan : Form
     {
         private LoadProducts loadProducts;
-
+        private int idBan;
         public ThanhToan()
         {
             InitializeComponent();
@@ -185,13 +186,14 @@ namespace PresentationLayer.Forms
             f.FormBorderStyle = FormBorderStyle.None;
         }
 
-        public void UpdateLabel(String text, int flag)
+        public void UpdateLabel(String text, int flag, int idBan)
         {
             if (flag == 1)
             {
                 lbHinhThuc.Text = "Ăn tại quán";
                 lbBanSo.Visible = true;
                 lbBanSo.Text = text;
+                this.idBan = idBan;
 
             }
             else
@@ -205,12 +207,25 @@ namespace PresentationLayer.Forms
 
         private void takeawaybtn_Click(object sender, EventArgs e)
         {
-            UpdateLabel("", 2);
+            UpdateLabel("", 2, -1);
         }
+
+        //private void getDataGridView()
+        //{
+        //    List<Products>
+        //    for (int i = 0; i < dgvTotal.Rows.Count; i++)
+        //    {
+        //        if (dgvTotal.Rows[i].IsNewRow) continue;
+        //        string column1 = dgvTotal.Rows[i].Cells[0].Value?.ToString();
+        //        string column2 = dgvTotal.Rows[i].Cells[1].Value?.ToString();
+
+               
+        //    }
+        //}
 
         private void btnTaoDonHang_Click(object sender, EventArgs e)
         {
-            frmTaoDH form = new frmTaoDH(lbBanSo.Text.ToString(), lbThanhTien.Text.ToString());
+            frmTaoDH form = new frmTaoDH(lbBanSo.Text.ToString(), lbThanhTien.Text.ToString(), idBan);
             DialogResult result = form.ShowDialog();
             this.Enabled = false;
             if (result == DialogResult.OK)
@@ -223,5 +238,7 @@ namespace PresentationLayer.Forms
                 this.Enabled = true;
             }
         }
+
+
     }
 }

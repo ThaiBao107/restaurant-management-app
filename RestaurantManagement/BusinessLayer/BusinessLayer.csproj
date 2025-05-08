@@ -55,11 +55,13 @@
     <Compile Include="DTOs\AccountDTO.cs" />
     <Compile Include="DTOs\CategoriesDTO.cs" />
     <Compile Include="DTOs\CustomerDTO.cs" />
+    <Compile Include="DTOs\OrderDTO.cs" />
     <Compile Include="DTOs\Products.cs" />
     <Compile Include="DTOs\StaffDTO.cs" />
     <Compile Include="DTOs\Tables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\AddOrders.cs" />
     <Compile Include="Services\LoadCustomers.cs" />
     <Compile Include="Services\LoadProducts.cs" />
     <Compile Include="Services\LoadStaffs.cs" />
