@@ -89,6 +89,7 @@
             this.btnCustomer.FillColor = System.Drawing.Color.Transparent;
             this.btnCustomer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnCustomer.Image = global::PresentationLayer.Properties.Resources.customer;
             this.btnCustomer.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCustomer.Location = new System.Drawing.Point(34, 789);
             this.btnCustomer.Margin = new System.Windows.Forms.Padding(4);
@@ -115,6 +116,7 @@
             this.btnReservation.FillColor = System.Drawing.Color.Transparent;
             this.btnReservation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnReservation.ForeColor = System.Drawing.Color.White;
+            this.btnReservation.Image = global::PresentationLayer.Properties.Resources.reservation;
             this.btnReservation.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReservation.Location = new System.Drawing.Point(34, 865);
             this.btnReservation.Margin = new System.Windows.Forms.Padding(4);
@@ -129,6 +131,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::PresentationLayer.Properties.Resources.restaurant;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(87, 18);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -154,6 +157,7 @@
             this.btnSettings.FillColor = System.Drawing.Color.Transparent;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Image = global::PresentationLayer.Properties.Resources.Setting_S;
             this.btnSettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSettings.Location = new System.Drawing.Point(34, 941);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
@@ -179,6 +183,7 @@
             this.btnKitchen.FillColor = System.Drawing.Color.Transparent;
             this.btnKitchen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnKitchen.ForeColor = System.Drawing.Color.White;
+            this.btnKitchen.Image = global::PresentationLayer.Properties.Resources.Kitchen_S;
             this.btnKitchen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKitchen.Location = new System.Drawing.Point(34, 642);
             this.btnKitchen.Margin = new System.Windows.Forms.Padding(4);
@@ -204,6 +209,7 @@
             this.btnPOS.FillColor = System.Drawing.Color.Transparent;
             this.btnPOS.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPOS.ForeColor = System.Drawing.Color.White;
+            this.btnPOS.Image = global::PresentationLayer.Properties.Resources.Pos_S;
             this.btnPOS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPOS.Location = new System.Drawing.Point(34, 566);
             this.btnPOS.Margin = new System.Windows.Forms.Padding(4);
@@ -229,6 +235,7 @@
             this.btnStaff.FillColor = System.Drawing.Color.Transparent;
             this.btnStaff.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStaff.ForeColor = System.Drawing.Color.White;
+            this.btnStaff.Image = global::PresentationLayer.Properties.Resources.Staff_S;
             this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStaff.Location = new System.Drawing.Point(34, 713);
             this.btnStaff.Margin = new System.Windows.Forms.Padding(4);
@@ -255,6 +262,7 @@
             this.btnTables.FillColor = System.Drawing.Color.Transparent;
             this.btnTables.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTables.ForeColor = System.Drawing.Color.White;
+            this.btnTables.Image = global::PresentationLayer.Properties.Resources.Table_S;
             this.btnTables.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTables.Location = new System.Drawing.Point(34, 490);
             this.btnTables.Margin = new System.Windows.Forms.Padding(4);
@@ -281,6 +289,7 @@
             this.btnProducts.FillColor = System.Drawing.Color.Transparent;
             this.btnProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnProducts.ForeColor = System.Drawing.Color.White;
+            this.btnProducts.Image = global::PresentationLayer.Properties.Resources.Product;
             this.btnProducts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProducts.Location = new System.Drawing.Point(34, 336);
             this.btnProducts.Margin = new System.Windows.Forms.Padding(4);
@@ -307,6 +316,7 @@
             this.btnCategories.FillColor = System.Drawing.Color.Transparent;
             this.btnCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCategories.ForeColor = System.Drawing.Color.White;
+            this.btnCategories.Image = global::PresentationLayer.Properties.Resources.Category_S;
             this.btnCategories.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCategories.Location = new System.Drawing.Point(34, 260);
             this.btnCategories.Margin = new System.Windows.Forms.Padding(4);
@@ -333,6 +343,7 @@
             this.btnHome.FillColor = System.Drawing.Color.Transparent;
             this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::PresentationLayer.Properties.Resources.Home_S;
             this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.Location = new System.Drawing.Point(34, 183);
             this.btnHome.Margin = new System.Windows.Forms.Padding(4);
@@ -439,7 +450,7 @@
             this.btnPromotion.Name = "btnPromotion";
             this.btnPromotion.Size = new System.Drawing.Size(270, 68);
             this.btnPromotion.TabIndex = 4;
-            this.btnPromotion.Text = "Tables";
+            this.btnPromotion.Text = "Promotions";
             this.btnPromotion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPromotion.TextOffset = new System.Drawing.Point(20, 0);
             this.btnPromotion.Click += new System.EventHandler(this.btnPromotion_Click);
