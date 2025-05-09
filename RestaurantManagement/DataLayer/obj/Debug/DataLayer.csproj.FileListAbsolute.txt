@@ -6,9 +6,13 @@ D:\RestaurantManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
 D:\RestaurantManagement\DataLayer\bin\Debug\EntityFramework.xml
 D:\RestaurantManagement\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.createtable.resources
+D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.Up2Date
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.dll
 D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.pdb
-D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.createtable.resources
-D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.cache
+D:\RestaurantManagement\DataLayer\obj\Debug\DataLayer.Migrations.updatecategory.resources
+D:\RestaurantManagement\bin\Debug\DataLayer.dll.config
+D:\RestaurantManagement\bin\Debug\DataLayer.dll
+D:\RestaurantManagement\bin\Debug\DataLayer.pdb

@@ -20,7 +20,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -55,6 +55,10 @@
     <Compile Include="Migrations\202505060718236_create table.Designer.cs">
       <DependentUpon>202505060718236_create table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505091630400_update category.cs" />
+    <Compile Include="Migrations\202505091630400_update category.Designer.cs">
+      <DependentUpon>202505091630400_update category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -88,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202505060718236_create table.resx">
       <DependentUpon>202505060718236_create table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505091630400_update category.resx">
+      <DependentUpon>202505091630400_update category.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -37,10 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,10 +61,10 @@
             this.dgvProduct.ColumnHeadersHeight = 40;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvSTT,
-            this.dgvId,
             this.dgvEdit,
-            this.dgvDel});
+            this.dgvDel,
+            this.dgvSTT,
+            this.dgvId});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -167,24 +167,6 @@
             this.txtSearch.TabIndex = 10;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // dgvSTT
-            // 
-            this.dgvSTT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSTT.FillWeight = 70F;
-            this.dgvSTT.HeaderText = "STT";
-            this.dgvSTT.MinimumWidth = 70;
-            this.dgvSTT.Name = "dgvSTT";
-            this.dgvSTT.ReadOnly = true;
-            this.dgvSTT.Width = 70;
-            // 
-            // dgvId
-            // 
-            this.dgvId.DataPropertyName = "ProductID";
-            this.dgvId.HeaderText = "id";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Visible = false;
-            // 
             // dgvEdit
             // 
             this.dgvEdit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -208,6 +190,24 @@
             this.dgvDel.Name = "dgvDel";
             this.dgvDel.ReadOnly = true;
             this.dgvDel.Width = 50;
+            // 
+            // dgvSTT
+            // 
+            this.dgvSTT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvSTT.FillWeight = 70F;
+            this.dgvSTT.HeaderText = "STT";
+            this.dgvSTT.MinimumWidth = 70;
+            this.dgvSTT.Name = "dgvSTT";
+            this.dgvSTT.ReadOnly = true;
+            this.dgvSTT.Width = 70;
+            // 
+            // dgvId
+            // 
+            this.dgvId.DataPropertyName = "ProductID";
+            this.dgvId.HeaderText = "id";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Visible = false;
             // 
             // frmProductView
             // 
@@ -240,9 +240,9 @@
         protected System.Windows.Forms.Label label2;
         protected System.Windows.Forms.Label label1;
         protected Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSTT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewImageColumn dgvEdit;
         private System.Windows.Forms.DataGridViewImageColumn dgvDel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSTT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
     }
 }

@@ -4,6 +4,7 @@ using RestaurantManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -101,6 +102,47 @@ namespace BusinessLayer.Services
                 IsAvailable = p.IsAvailable,
                 CategoryID = p.CategoryID
             }).ToList();
+        }
+
+
+
+        public List<ProductDTO> getAllCategories(int categoriesID)
+        {
+
+            //where p.CategoryID == 1
+            try
+            {
+
+                if (categoriesID != -1)
+                {
+                    var query = _context.GetAll().Where(p => p.CategoryID == categoriesID);
+                    return query.Select(p => new DTOs.ProductDTO
+                                 {
+                                     ProductID = p.ProductID,
+                                     ProductName = p.ProductName,
+                                     Price = p.Price,
+                                     IsAvailable = p.IsAvailable,
+                                     Description = p.Description,
+                                     CategoryID = p.CategoryID
+                                 }).ToList();
+                }
+                else
+                {
+                    var products = _context.GetAll().Select(p => new DTOs.ProductDTO
+                    {
+                        ProductID = p.ProductID,
+                        ProductName = p.ProductName,
+                        Price = p.Price,
+                        IsAvailable = p.IsAvailable,
+                        Description = p.Description,
+                        CategoryID = p.CategoryID
+                    }).ToList();
+                    return products;
+                }
+
+
+            }
+            catch (Exception ex) { throw ex; }
         }
     }
 }

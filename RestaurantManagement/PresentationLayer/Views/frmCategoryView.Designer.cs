@@ -37,12 +37,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvCategory = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvEdit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,12 +125,12 @@
             this.dgvCategory.ColumnHeadersHeight = 40;
             this.dgvCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvEdit,
+            this.dgvDel,
             this.dgvSTT,
             this.dgvId,
             this.dgvName,
-            this.Description,
-            this.dgvEdit,
-            this.dgvDel});
+            this.Description});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -171,18 +171,6 @@
             this.dgvCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellClick);
             this.dgvCategory.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvCategory_RowPostPaint);
             // 
-            // dgvDel
-            // 
-            this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvDel.FillWeight = 50F;
-            this.dgvDel.HeaderText = "";
-            this.dgvDel.Image = global::PresentationLayer.Properties.Resources.Delete_S;
-            this.dgvDel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvDel.MinimumWidth = 50;
-            this.dgvDel.Name = "dgvDel";
-            this.dgvDel.ReadOnly = true;
-            this.dgvDel.Width = 50;
-            // 
             // dgvEdit
             // 
             this.dgvEdit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -195,28 +183,17 @@
             this.dgvEdit.ReadOnly = true;
             this.dgvEdit.Width = 50;
             // 
-            // Description
+            // dgvDel
             // 
-            this.Description.DataPropertyName = "Description";
-            this.Description.HeaderText = "Mô tả";
-            this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
-            this.Description.Visible = false;
-            // 
-            // dgvName
-            // 
-            this.dgvName.DataPropertyName = "CategoryName";
-            this.dgvName.HeaderText = "Name";
-            this.dgvName.Name = "dgvName";
-            this.dgvName.ReadOnly = true;
-            // 
-            // dgvId
-            // 
-            this.dgvId.DataPropertyName = "CategoryID";
-            this.dgvId.HeaderText = "id";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Visible = false;
+            this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvDel.FillWeight = 50F;
+            this.dgvDel.HeaderText = "";
+            this.dgvDel.Image = global::PresentationLayer.Properties.Resources.Delete_S;
+            this.dgvDel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvDel.MinimumWidth = 50;
+            this.dgvDel.Name = "dgvDel";
+            this.dgvDel.ReadOnly = true;
+            this.dgvDel.Width = 50;
             // 
             // dgvSTT
             // 
@@ -227,6 +204,29 @@
             this.dgvSTT.Name = "dgvSTT";
             this.dgvSTT.ReadOnly = true;
             this.dgvSTT.Width = 70;
+            // 
+            // dgvId
+            // 
+            this.dgvId.DataPropertyName = "CategoryID";
+            this.dgvId.HeaderText = "id";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Visible = false;
+            // 
+            // dgvName
+            // 
+            this.dgvName.DataPropertyName = "CategoryName";
+            this.dgvName.HeaderText = "Name";
+            this.dgvName.Name = "dgvName";
+            this.dgvName.ReadOnly = true;
+            // 
+            // Description
+            // 
+            this.Description.DataPropertyName = "Description";
+            this.Description.HeaderText = "Mô tả";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            this.Description.Visible = false;
             // 
             // frmCategoryView
             // 
@@ -258,11 +258,11 @@
         protected System.Windows.Forms.Label label1;
         protected Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCategory;
+        private System.Windows.Forms.DataGridViewImageColumn dgvEdit;
+        private System.Windows.Forms.DataGridViewImageColumn dgvDel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSTT;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewImageColumn dgvEdit;
-        private System.Windows.Forms.DataGridViewImageColumn dgvDel;
     }
 }

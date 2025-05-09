@@ -162,5 +162,10 @@ namespace PresentationLayer.Forms
                 }
             }
         }
+
+        private void txtImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,3 +13,6 @@ D:\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompile
 D:\RestaurantManagement\BusinessLayer\obj\Debug\Business.EA331CBA.Up2Date
 D:\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\RestaurantManagement\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\RestaurantManagement\bin\Debug\BusinessLayer.dll.config
+D:\RestaurantManagement\bin\Debug\BusinessLayer.dll
+D:\RestaurantManagement\bin\Debug\BusinessLayer.pdb
