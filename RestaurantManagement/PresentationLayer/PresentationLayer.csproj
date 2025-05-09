@@ -80,6 +80,12 @@
     <Compile Include="Adds\frmProductAdd.Designer.cs">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adds\frmPromotionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmPromotionAdd.Designer.cs">
+      <DependentUpon>frmPromotionAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adds\frmReservationAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,12 @@
     <Compile Include="Views\frmProductView.Designer.cs">
       <DependentUpon>frmProductView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmPromotionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPromotionView.Designer.cs">
+      <DependentUpon>frmPromotionView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmReservationView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmProductAdd.resx">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmPromotionAdd.resx">
+      <DependentUpon>frmPromotionAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmReservationAdd.resx">
       <DependentUpon>frmReservationAdd.cs</DependentUpon>
@@ -219,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPromotionView.resx">
+      <DependentUpon>frmPromotionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmReservationView.resx">
       <DependentUpon>frmReservationView.cs</DependentUpon>

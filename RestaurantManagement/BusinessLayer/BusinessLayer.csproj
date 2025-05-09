@@ -56,6 +56,7 @@
     <Compile Include="DTOs\CategoryDTO.cs" />
     <Compile Include="DTOs\CustomerDTO.cs" />
     <Compile Include="DTOs\ProductDTO.cs" />
+    <Compile Include="DTOs\PromotionDTO.cs" />
     <Compile Include="DTOs\ReservationDTO.cs" />
     <Compile Include="DTOs\ReservationJoinCustomerDTO.cs" />
     <Compile Include="DTOs\StaffDTO.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\CustomerService.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\PromotionService.cs" />
     <Compile Include="Services\ReservationService.cs" />
     <Compile Include="Services\StaffService.cs" />
     <Compile Include="Services\TableService.cs" />

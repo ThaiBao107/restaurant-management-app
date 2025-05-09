@@ -79,5 +79,10 @@ namespace PresentationLayer.Forms
         {
             AddControls(new frmCustomerView());
         }
+
+        private void btnPromotion_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmPromotionView());
+        }
     }
 }
