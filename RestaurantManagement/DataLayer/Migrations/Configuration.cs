@@ -24,13 +24,13 @@
             context.Staffs.AddOrUpdate(s => s.Email,
                  new Staff
                  {
-                     FirstName = "Tùng",
-                     LastName = "Nguyễn",
+                     FirstName = "admin",
+                     LastName = "admin",
                      Role = StaffRole.Manager,
                      Sex = Sex.Male,
                      Shift = Shift.Morning,
-                     Phone = "0948451901",
-                     Email = "nttung1901@gmail.com",
+                     Phone = "0113114115",
+                     Email = "admin@gmail.com",
                      HireDate = new DateTime(2025, 4, 30),
                      Salary = 60000000
                  });
@@ -38,7 +38,7 @@
             context.SaveChanges(); // Cần save để StaffID được tạo
 
             // Lấy lại staff vừa thêm (trong trường hợp AddOrUpdate không trả lại object)
-            var tung = context.Staffs.FirstOrDefault(s => s.Email == "nttung1901@gmail.com");
+            var tung = context.Staffs.FirstOrDefault(s => s.Email == "admin@gmail.com");
 
             if (tung != null && !context.StaffAccounts.Any(a => a.Username == "admin"))
             {
