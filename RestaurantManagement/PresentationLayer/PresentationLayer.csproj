@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\BillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BillList.Designer.cs">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RestaurantManagerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\ucOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ucOrder.Designer.cs">
+      <DependentUpon>ucOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +140,9 @@
     <Compile Include="View\ucTable.Designer.cs">
       <DependentUpon>ucTable.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\BillList.resx">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +168,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ucOrder.resx">
+      <DependentUpon>ucOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>

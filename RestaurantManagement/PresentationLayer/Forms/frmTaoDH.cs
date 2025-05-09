@@ -13,6 +13,8 @@ using BusinessLayer;
 using BusinessLayer.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using BusinessLayer.DTOs;
+
+
 namespace PresentationLayer.Forms
 {
     public partial class frmTaoDH : Form
@@ -163,8 +165,10 @@ namespace PresentationLayer.Forms
             MessageBox.Show("Bạn đã nhấn nút Thanh toán!");
         }
 
-       
-       
+        
+
+
+
 
         private void btnTaoDH_Click(object sender, EventArgs e)
         {

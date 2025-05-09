@@ -13,15 +13,15 @@ namespace RestaurantManagement.DAL.Models
 
     public class Order
     {
-        public Order(int cusID, int tabID, int staID, DateTime date, float Total)
-        {
-            this.CustomerID = cusID;
-            this.TableID = tabID;
-            this.StaffID = staID;
-            this.OrderDate = date;
-            this.TotalAmount = Total;
-            this.Status = OrderStatus.Paid;
-        }
+        //public Order(int cusID, int tabID, int staID, DateTime date, float Total)
+        //{
+        //    this.CustomerID = cusID;
+        //    this.TableID = tabID;
+        //    this.StaffID = staID;
+        //    this.OrderDate = date;
+        //    this.TotalAmount = Total;
+        //    this.Status = OrderStatus.Paid;
+        //}
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderID { get; set; }

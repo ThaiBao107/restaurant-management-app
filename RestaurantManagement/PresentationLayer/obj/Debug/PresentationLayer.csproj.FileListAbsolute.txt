@@ -76,3 +76,5 @@ D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\D
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmTable_ThanhToan.resources
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.View.ucTable.resources
 D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmTaoDH.resources
+D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.View.ucOrder.resources
+D:\LTCSDL\restaurant-management-app\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.BillList.resources

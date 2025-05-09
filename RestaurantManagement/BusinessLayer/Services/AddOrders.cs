@@ -61,7 +61,7 @@ namespace BusinessLayer.Services
             try
             {
                 
-                Order order = new Order(o.CustomerID, o.TableID, o.StaffID, o.OrderDate, o.TotalAmount);
+                Order order = new Order { CustomerID=o.CustomerID, TableID=o.TableID, StaffID=o.StaffID, OrderDate=o.OrderDate,TotalAmount= o.TotalAmount };
                 this._context.Add(order);
                 this._context.SaveChanges();
                 Console.WriteLine(order.OrderID);
@@ -81,7 +81,7 @@ namespace BusinessLayer.Services
             {
 
 
-                DTOs.OrderDTO o = new DTOs.OrderDTO(CustomerId, TableId, StaddId, orderDate, totalAmount, orderStatus);
+                DTOs.OrderDTO o = new DTOs.OrderDTO { CustomerID=CustomerId, TableID=TableId, StaffID=StaddId, OrderDate=orderDate, TotalAmount=totalAmount, Status= DTOs.OrderStatus.Paid };
                 if(AddOrder(o,ods)) return true;
                 else return false;
             }

@@ -13,18 +13,19 @@ using BusinessLayer.DTOs;
 using BusinessLayer.Services;
 using Guna.UI2.WinForms;
 using PresentationLayer.View;
-using BusinessLayer.DTOs;
 using System.IO;
 namespace PresentationLayer.Forms
 {
     public partial class ThanhToan : Form
     {
         private LoadProducts loadProducts;
+        private PromotionService promotionService;
         private int idBan;
         public ThanhToan()
         {
             InitializeComponent();
             this.loadProducts = new LoadProducts();
+            this.promotionService = new PromotionService();
         }
 
         private void monpizzabtn_Click(object sender, EventArgs e)
@@ -51,16 +52,47 @@ namespace PresentationLayer.Forms
             
             return k;
         }
-        private void reloadThanhTien()
+
+        
+
+
+
+
+
+        private void reloadThanhTien(double anoy)
         {
-            double total = tongTien();
-            lbTongTien.Text = "";
-            lbThue.Text = "";
-            lbThanhTien.Text = "";
-            lbTongTien.Text += $"{total} VND";
-            lbThue.Text += $"{total * 0.1} VND";
-            lbThanhTien.Text += $"{total + (total * 0.1)} VND";
+            if(anoy == -1)
+            {
+                double per = 0;
+                double total = tongTien() - per;
+                double sum = tongTien();
+                lbTongTien.Text = "";
+                lbThue.Text = "";
+                lbThanhTien.Text = "";
+                lbGiamGia.Text = "";
+                lbGiamGia.Text += $"0";
+                lbTongTien.Text += $"{sum} VND";
+                lbThue.Text += $"{total * 0.1} VND";
+                lbThanhTien.Text += $"{total + (total * 0.1)} VND";
+            }
+            else
+            {
+                double per = tongTien() * anoy;
+                double total = tongTien() - per;
+                double sum = tongTien();
+                lbTongTien.Text = "";
+                lbThue.Text = "";
+                lbThanhTien.Text = "";
+                lbGiamGia.Text = "";
+                lbGiamGia.Text += $"{total}";
+                lbTongTien.Text += $"{sum} VND";
+                lbThue.Text += $"{total * 0.1} VND";
+                lbThanhTien.Text += $"{total + (total * 0.1)} VND";
+            }
+            
         }
+
+
         
         private void AddItems(int id, string name, double price, Image image)
         {
@@ -83,14 +115,14 @@ namespace PresentationLayer.Forms
                         item.Cells["dgvrSL"].Value = int.Parse(item.Cells["dgvrSL"].Value.ToString()) + 1;
                         item.Cells["dgvrTotal"].Value = int.Parse(item.Cells["dgvrSL"].Value.ToString()) *
                         double.Parse(item.Cells["dgvrPrice"].Value.ToString());
-                        reloadThanhTien();
+                        reloadThanhTien(-1);
                         return ;
                     }
 
                 }
                 
                 dgvTotal.Rows.Add(new object[] { wdg.id, wdg.Pname, 1, wdg.price, double.Parse(wdg.price) });
-                reloadThanhTien();
+                reloadThanhTien(-1);
 
             };
             
@@ -138,11 +170,19 @@ namespace PresentationLayer.Forms
             Productpnl.Controls.Clear();
             LoadProducts("All", -1);
             dgvTotal = CustomDataGridView(dgvTotal);
+
+            var pros = promotionService.loadPromotion();
+            comboGiamGia.DataSource = pros;
+            comboGiamGia.DisplayMember = "PromotionName";
+            comboGiamGia.ValueMember = "DiscountPercentage";
+            comboGiamGia.SelectedIndex = -1;
+
         }
 
         private void billListbtn_Click(object sender, EventArgs e)
         {
-
+            BillList f = new BillList();
+            f.ShowDialog();
         }
 
        
@@ -246,7 +286,7 @@ namespace PresentationLayer.Forms
                     quantity = int.Parse(dr.Cells["dgvrSL"].Value.ToString());
                     amount = (decimal)double.Parse(dr.Cells["dgvrTotal"].Value.ToString());
                     
-                    OrderDetailDTO od = new OrderDetailDTO(id, quantity, amount);
+                    OrderDetailDTO od = new OrderDetailDTO {ProductId= id, Quantity=quantity, UnitPrice=amount };
                     list.Add(od);
                 }
                 frmTaoDH form = new frmTaoDH(lbBanSo.Text.ToString(), lbThanhTien.Text.ToString(), idBan, list);
@@ -296,7 +336,36 @@ namespace PresentationLayer.Forms
                     }
                 }
             }
-            reloadThanhTien();
+            reloadThanhTien(-1);
+        }
+
+        private void addGiamGia(float percent)
+        {
+            double tongtien = this.tongTien();
+            double giamgia = tongtien * percent;
+            double thanhtien = tongtien - giamgia;
+            lbGiamGia.Text = $"{giamgia.ToString()} VND";
+
+        }
+
+        private void comboGiamGia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //double value;
+            //if (double.Parse(comboGiamGia.SelectedIndex.ToString()) == -1)
+            //{
+            //    value = -1;
+            //}
+            //else
+            //{
+            //    value = Convert.ToDouble(comboGiamGia.SelectedValue);
+            //}
+
+            //reloadThanhTien(value);
+            if (comboGiamGia.SelectedIndex >= 0 && comboGiamGia.SelectedItem is PromotionDTO selectedPromotion)
+            {
+                double value = selectedPromotion.DiscountPercentage;
+                reloadThanhTien(value);
+            }
         }
     }
 }

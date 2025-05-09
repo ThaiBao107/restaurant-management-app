@@ -57,6 +57,7 @@
     <Compile Include="DTOs\OrderDetailDTO.cs" />
     <Compile Include="DTOs\OrderDTO.cs" />
     <Compile Include="DTOs\Products.cs" />
+    <Compile Include="DTOs\PromotionDTO.cs" />
     <Compile Include="DTOs\StaffDTO.cs" />
     <Compile Include="DTOs\Tables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +67,8 @@
     <Compile Include="Services\LoadProducts.cs" />
     <Compile Include="Services\LoadStaffs.cs" />
     <Compile Include="Services\LoadTables.cs" />
+    <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\PromotionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">
