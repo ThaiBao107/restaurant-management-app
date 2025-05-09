@@ -123,7 +123,8 @@ namespace BusinessLayer.Services
                                      Price = p.Price,
                                      IsAvailable = p.IsAvailable,
                                      Description = p.Description,
-                                     CategoryID = p.CategoryID
+                                     CategoryID = p.CategoryID,
+                                     Image = p.Image
                                  }).ToList();
                 }
                 else
@@ -135,7 +136,8 @@ namespace BusinessLayer.Services
                         Price = p.Price,
                         IsAvailable = p.IsAvailable,
                         Description = p.Description,
-                        CategoryID = p.CategoryID
+                        CategoryID = p.CategoryID,
+                        Image = p.Image
                     }).ToList();
                     return products;
                 }

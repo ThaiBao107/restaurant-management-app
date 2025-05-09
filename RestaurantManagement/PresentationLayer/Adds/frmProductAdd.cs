@@ -40,25 +40,33 @@ namespace PresentationLayer.Forms
         string filePath;
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Image Files (*.jpg;*.png)|*.jpg;*.png";
-            if (ofd.ShowDialog() == DialogResult.OK)
+            try
             {
-                // Tạo thư mục Images trong thư mục dự án (nếu chưa có)
-                string imagesFolder = Path.Combine(Application.StartupPath, "Images");
-                if (!Directory.Exists(imagesFolder))
-                    Directory.CreateDirectory(imagesFolder);
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Image Files (*.jpg;*.png)|*.jpg;*.png";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    // Tạo thư mục Images trong thư mục dự án (nếu chưa có)
+                    string imagesFolder = Path.Combine(Application.StartupPath, "Images");
+                    if (!Directory.Exists(imagesFolder))
+                        Directory.CreateDirectory(imagesFolder);
 
-                // Copy ảnh được chọn vào thư mục Images
-                string fileName = Path.GetFileName(ofd.FileName);
-                string destPath = Path.Combine(imagesFolder, fileName);
-                File.Copy(ofd.FileName, destPath, true);
+                    // Copy ảnh được chọn vào thư mục Images
+                    string fileName = Path.GetFileName(ofd.FileName);
+                    string destPath = Path.Combine(imagesFolder, fileName);
+                    File.Copy(ofd.FileName, destPath, true);
 
-                // Gán ảnh cho PictureBox
-                txtImage.Image = new Bitmap(destPath);
+                    // Gán ảnh cho PictureBox
+                    txtImage.Image = new Bitmap(destPath);
 
-                // Lưu đường dẫn tương đối vào filePath
-                filePath = Path.Combine("Images", fileName);
+                    // Lưu đường dẫn tương đối vào filePath
+                    filePath = Path.Combine("Images", fileName);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
 

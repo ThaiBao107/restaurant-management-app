@@ -4,16 +4,10 @@ using Guna.UI2.WinForms;
 using PresentationLayer.View;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
+using System.Drawing;
 
 namespace PresentationLayer.Forms
 {
@@ -128,30 +122,42 @@ namespace PresentationLayer.Forms
             var dt = productService.getAllCategories(categoriesID);
             foreach (var i in dt)
             {
-                var path = Directory.GetParent(System.Windows.Forms.Application.StartupPath).FullName;
+                var imageName = i.Image.ToString(); // tên file ảnh, ví dụ: "sp01.jpg"
+                var imagePath = Path.Combine(Application.StartupPath, imageName);
 
- 
                 System.Drawing.Image img = null;
-                img = System.Drawing.Image.FromFile(path + $"\\Images\\{fouder}\\{i.Description}.jpg");
+
+                if (File.Exists(imagePath))
+                {
+                    img = System.Drawing.Image.FromFile(imagePath);
+                }
+                else
+                {
+                    // Xử lý khi không có ảnh: có thể dùng ảnh mặc định
+                    img = null; // giả sử bạn có ảnh mặc định
+                }
+
                 AddItems(Convert.ToInt32(i.ProductID), i.ProductName.ToString(),
-                    double.Parse(i.Price.ToString()),img);
+                    double.Parse(i.Price.ToString()), img);
             }
 
         }
 
 
-        private Guna2DataGridView CustomDataGridView(Guna2DataGridView dgv)
-        {
-            dgv.Rows.Clear();
-            var path = Directory.GetParent(System.Windows.Forms.Application.StartupPath).FullName;
-            DataGridViewImageColumn imageColum = new DataGridViewImageColumn();
-            imageColum.Image = System.Drawing.Image.FromFile(path + "\\Images\\thungrac.png");
-            imageColum.ImageLayout = DataGridViewImageCellLayout.Zoom;
+        //private Guna2DataGridView CustomDataGridView(Guna2DataGridView dgv)
+        //{
+        //    dgv.Rows.Clear();
+        //    var path = Directory.GetParent(Application.StartupPath).FullName;
+        //    DataGridViewImageColumn imageColum = new DataGridViewImageColumn();
+        //    imageColum.Image = System.Drawing.Image.FromFile(path + "\\Image\\thungrac.png");
+        //    imageColum.ImageLayout = DataGridViewImageCellLayout.Zoom;
 
-            dgv.Columns.Add(imageColum);
+        //    dgv.Columns.Add(imageColum);
 
-            return dgv;
-        }
+        //    return dgv;
+        //}
+
+
 
         private void LoadData()
         {
@@ -339,6 +345,26 @@ namespace PresentationLayer.Forms
         {
             Productpnl.Controls.Clear();
             LoadProducts("All", -1);
+        }
+
+        private void dgvTotal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int col = e.ColumnIndex;
+            if (dgvTotal.Columns[col] is DataGridViewImageColumn)
+            {
+                int rol = e.RowIndex;
+
+                string id = dgvTotal.Rows[rol].Cells["dgvrId"].Value.ToString();
+                foreach (DataGridViewRow row in dgvTotal.Rows)
+                {
+                    if (int.Parse(id) == int.Parse(row.Cells["dgvrId"].Value.ToString()))
+                    {
+                        dgvTotal.Rows.Remove(row);
+                        break;
+                    }
+                }
+            }
+            reloadThanhTien(-1);
         }
     }
 

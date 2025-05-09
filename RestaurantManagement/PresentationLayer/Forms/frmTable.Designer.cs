@@ -31,15 +31,17 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lb1 = new System.Windows.Forms.Label();
             this.Tablepnl = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Bisque;
+            this.guna2Panel1.Controls.Add(this.btnExit);
             this.guna2Panel1.Controls.Add(this.lb1);
             this.guna2Panel1.Location = new System.Drawing.Point(3, 4);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(500, 63);
             this.guna2Panel1.TabIndex = 0;
@@ -61,11 +63,23 @@
             // Tablepnl
             // 
             this.Tablepnl.Location = new System.Drawing.Point(3, 72);
-            this.Tablepnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Tablepnl.Margin = new System.Windows.Forms.Padding(2);
             this.Tablepnl.Name = "Tablepnl";
             this.Tablepnl.Size = new System.Drawing.Size(500, 340);
             this.Tablepnl.TabIndex = 1;
             this.Tablepnl.Paint += new System.Windows.Forms.PaintEventHandler(this.Tablepnl_Paint);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.CustomClick = true;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(452, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmTable
             // 
@@ -75,7 +89,7 @@
             this.Controls.Add(this.Tablepnl);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTable_ThanhToan";
@@ -91,5 +105,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.FlowLayoutPanel Tablepnl;
+        private Guna.UI2.WinForms.Guna2ControlBox btnExit;
     }
 }

@@ -23,7 +23,8 @@ namespace BusinessLayer.Services
             return categories.Select(c => new CategoryDTO
             {
                 CategoryID = c.CategoryID,
-                CategoryName = c.CategoryName
+                CategoryName = c.CategoryName,
+                Image = c.Image
             }).ToList();
         }
 
@@ -41,7 +42,8 @@ namespace BusinessLayer.Services
 
             var category = new Category
             {
-                CategoryName = categoryDTO.CategoryName
+                CategoryName = categoryDTO.CategoryName,
+                Image = categoryDTO.Image
             };
 
             _context.Add(category);
