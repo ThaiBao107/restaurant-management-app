@@ -93,6 +93,11 @@ namespace PresentationLayer.Forms
                     MessageBox.Show("Vui lòng chọn hình ảnh!", "Thiếu ảnh", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+                if (txtName.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập tên", "Thiếu tên", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 try
                 {

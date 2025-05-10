@@ -39,6 +39,14 @@ namespace BusinessLayer.Services
         // Thêm danh mục mới
         public bool AddCustomer(CustomerDTO customerDTO)
         {
+            bool isDuplicate = _context.GetAll()
+               .Any(p => p.Phone.ToLower() == customerDTO.Phone);
+
+            if (isDuplicate)
+            {
+                return false;
+            }
+
             var customer = new Customer
             {
                 FirstName = customerDTO.FirstName,
@@ -50,12 +58,21 @@ namespace BusinessLayer.Services
 
             _context.Add(customer);
             _context.SaveChanges();
-            return true; // Thêm thành công
+            return true;
         }
 
         // Cập nhật danh mục
         public bool UpdateCustomer(CustomerDTO customerDTO)
         {
+            bool isDuplicate = _context.GetAll()
+              .Any(p => p.Phone.ToLower() == customerDTO.Phone);
+
+            if (isDuplicate)
+            {
+                return false;
+            }
+
+
             var existingCustomer = _context.GetById(customerDTO.CustomerID);
             if (existingCustomer == null)
                 return false;

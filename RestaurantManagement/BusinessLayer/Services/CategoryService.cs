@@ -67,6 +67,7 @@ namespace BusinessLayer.Services
             }
 
             existingCategory.CategoryName = categoryDTO.CategoryName;
+            existingCategory.Image = categoryDTO.Image;
 
             _context.Update(existingCategory);
             _context.SaveChanges();
@@ -97,6 +98,12 @@ namespace BusinessLayer.Services
                 CategoryID = c.CategoryID,
                 CategoryName = c.CategoryName
             }).ToList();
+        }
+
+        public string  GetCategoryNameByID(int keyword)
+        {
+            var matchedCategories = _context.GetById(keyword);
+            return matchedCategories.CategoryName;
         }
     }
 }

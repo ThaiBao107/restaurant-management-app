@@ -41,6 +41,8 @@
             this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Image = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +66,9 @@
             this.dgvEdit,
             this.dgvDel,
             this.dgvSTT,
-            this.dgvId});
+            this.dgvId,
+            this.Image,
+            this.CategoryID});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -209,6 +213,22 @@
             this.dgvId.ReadOnly = true;
             this.dgvId.Visible = false;
             // 
+            // Image
+            // 
+            this.Image.DataPropertyName = "Image";
+            this.Image.HeaderText = "Image";
+            this.Image.Name = "Image";
+            this.Image.ReadOnly = true;
+            this.Image.Visible = false;
+            // 
+            // CategoryID
+            // 
+            this.CategoryID.DataPropertyName = "CategoryID";
+            this.CategoryID.HeaderText = "CategoryID";
+            this.CategoryID.Name = "CategoryID";
+            this.CategoryID.ReadOnly = true;
+            this.CategoryID.Visible = false;
+            // 
             // frmProductView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -244,5 +264,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dgvDel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSTT;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Image;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CategoryID;
     }
 }

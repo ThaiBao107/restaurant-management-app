@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -27,34 +28,47 @@ namespace PresentationLayer.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (id == 0)
+            if (txtName.Text == "")
             {
-                CategoryDTO categoryDTO = new CategoryDTO { CategoryName = txtName.Text,
-                Image = filePath};
-                if (categoryService.AddCategory(categoryDTO))
+                MessageBox.Show("Vui lòng điền đủ thông tin");
+                return;
+            }
+            
+            try
+            {
+                if (id == 0)
                 {
-                    MessageBox.Show("Thêm thành công");
-                    this.DialogResult = DialogResult.OK;
+                    CategoryDTO categoryDTO = new CategoryDTO { CategoryName = txtName.Text, Image = filePath };
+                    if (categoryService.AddCategory(categoryDTO))
+                    {
+                        MessageBox.Show("Thêm thành công");
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Dang mục đã tồn tại!");
+                        txtName.Clear();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Dang mục đã tồn tại!");
-                    txtName.Clear();
+                    CategoryDTO categoryDTO = new CategoryDTO { CategoryID = id, CategoryName = txtName.Text, Image = filePath };
+                    if (categoryService.UpdateCategory(categoryDTO))
+                    {
+                        MessageBox.Show("Cập nhật thành công");
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Trùng tên danh mục!");
+                        txtName.Clear();
+                    }
                 }
             }
-            else
+            catch (SqlException ex)
             {
-                CategoryDTO categoryDTO = new CategoryDTO {CategoryID = id ,CategoryName = txtName.Text };
-                if (categoryService.UpdateCategory(categoryDTO))
-                {
-                    MessageBox.Show("Cập nhật thành công");
-                    this.DialogResult = DialogResult.OK;
-                }
-                else
-                {
-                    MessageBox.Show("Trùng tên danh mục!");
-                    txtName.Clear();
-                }
+
+                MessageBox.Show(ex.Message);
             }
         }
 

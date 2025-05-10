@@ -38,13 +38,12 @@ namespace BusinessLayer.Services
         // Thêm mã giảm giá mới
         public bool AddPromotion(PromotionDTO promotionDTO)
         {
-            // Kiểm tra tên mã giảm giá đã tồn tại (không phân biệt hoa thường)
             bool isDuplicate = _context.GetAll()
                 .Any(p => p.PromotionName.ToLower() == promotionDTO.PromotionName.ToLower());
 
             if (isDuplicate)
             {
-                return false; // Thêm thất bại do trùng tên
+                return false;
             }
 
             Promotion promotion = new Promotion
@@ -65,6 +64,14 @@ namespace BusinessLayer.Services
         // Cập nhật mã giảm giá
         public bool UpdatePromotion (PromotionDTO promotionDTO)
         {
+            bool isDuplicate = _context.GetAll()
+               .Any(p => p.PromotionName.ToLower() == promotionDTO.PromotionName.ToLower());
+
+            if (isDuplicate)
+            {
+                return false; // Thêm thất bại do trùng tên
+            }
+
             var existingPromotion = _context.GetById(promotionDTO.PromotionID);
             if (existingPromotion == null)
                 return false;

@@ -42,7 +42,6 @@ D:\RestaurantManagement\PresentationLayer\bin\Debug\DataLayer.dll.config
 D:\RestaurantManagement\PresentationLayer\obj\Debug\Presenta.9C561136.Up2Date
 D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.exe
 D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.pdb
-D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.ThanhToan.resources
 D:\RestaurantManagement\PresentationLayer\obj\Debug\PresentationLayer.Forms.frmTable.resources
 D:\RestaurantManagement\bin\Debug\PresentationLayer.exe.config
 D:\RestaurantManagement\bin\Debug\PresentationLayer.exe

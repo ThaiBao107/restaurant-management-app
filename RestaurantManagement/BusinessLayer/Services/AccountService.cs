@@ -35,7 +35,6 @@ namespace BusinessLayer.Services
         }
 
 
-        //Create property for username
         public static string user;
 
         public static string USER

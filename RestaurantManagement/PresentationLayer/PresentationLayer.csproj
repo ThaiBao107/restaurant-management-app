@@ -146,12 +146,6 @@
     <Compile Include="Forms\frmPOS.Designer.cs">
       <DependentUpon>frmPOS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ThanhToan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ThanhToan.Designer.cs">
-      <DependentUpon>ThanhToan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantDataSet.Designer.cs">
@@ -201,22 +195,22 @@
     <Compile Include="Views\frmTableView.Designer.cs">
       <DependentUpon>frmTableView.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\ucOrder.cs">
+    <Compile Include="Items\ucOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="view\ucOrder.Designer.cs">
+    <Compile Include="Items\ucOrder.Designer.cs">
       <DependentUpon>ucOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\ucProduct.cs">
+    <Compile Include="Items\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="view\ucProduct.Designer.cs">
+    <Compile Include="Items\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\ucTable.cs">
+    <Compile Include="Items\ucTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="view\ucTable.Designer.cs">
+    <Compile Include="Items\ucTable.Designer.cs">
       <DependentUpon>ucTable.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Adds\frmCategoryAdd.resx">
@@ -261,9 +255,6 @@
     <EmbeddedResource Include="Forms\frmPOS.resx">
       <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ThanhToan.resx">
-      <DependentUpon>ThanhToan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -295,13 +286,13 @@
     <EmbeddedResource Include="Views\frmTableView.resx">
       <DependentUpon>frmTableView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\ucOrder.resx">
+    <EmbeddedResource Include="Items\ucOrder.resx">
       <DependentUpon>ucOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\ucProduct.resx">
+    <EmbeddedResource Include="Items\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\ucTable.resx">
+    <EmbeddedResource Include="Items\ucTable.resx">
       <DependentUpon>ucTable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
