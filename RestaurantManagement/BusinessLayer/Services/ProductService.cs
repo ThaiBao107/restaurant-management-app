@@ -106,7 +106,7 @@ namespace BusinessLayer.Services
 
 
 
-        public List<ProductDTO> getAllCategories(int categoriesID)
+        public List<ProductDTO> getAllProductByCategorieID(int categoriesID)
         {
 
             //where p.CategoryID == 1

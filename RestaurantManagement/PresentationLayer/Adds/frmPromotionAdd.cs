@@ -50,13 +50,43 @@ namespace PresentationLayer.Adds
             {
                 try
                 {
+                    string name = txtPromotionName.Text.Trim();
+                    string description = txtDes.Text.Trim();
+                    double discount = Convert.ToDouble(nmrPromotionPercentage.Value);
+                    DateTime startDate = dateStart.Value;
+                    DateTime endDate = dateEnd.Value;
+
+                    if (string.IsNullOrWhiteSpace(name))
+                    {
+                        MessageBox.Show("Tên mã giảm giá không được để trống.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    if (name.Length > 100)
+                    {
+                        MessageBox.Show("Tên mã giảm giá không được vượt quá 100 ký tự.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    if (discount < 0 || discount > 100)
+                    {
+                        MessageBox.Show("Phần trăm giảm giá phải nằm trong khoảng từ 0 đến 100.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    if (startDate >= endDate)
+                    {
+                        MessageBox.Show("Ngày bắt đầu phải nhỏ hơn ngày kết thúc.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
                     PromotionDTO promotion = new PromotionDTO
                     {
-                        PromotionName = txtPromotionName.Text.Trim(),
-                        Description = txtDes.Text.Trim(),
-                        DiscountPercentage = Convert.ToDouble(nmrPromotionPercentage.Value),
-                        StartDate = dateStart.Value,
-                        EndDate = dateEnd.Value,
+                        PromotionName = name,
+                        Description = description,
+                        DiscountPercentage = discount,
+                        StartDate = startDate,
+                        EndDate = endDate,
                         IsActive = guna2ToggleSwitch1.Checked
                     };
 

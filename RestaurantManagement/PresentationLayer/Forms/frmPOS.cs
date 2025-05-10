@@ -119,7 +119,7 @@ namespace PresentationLayer.Forms
         private void LoadProducts(string fouder, int categoriesID)
         {
 
-            var dt = productService.getAllCategories(categoriesID);
+            var dt = productService.getAllProductByCategorieID(categoriesID);
             foreach (var i in dt)
             {
                 var imageName = i.Image.ToString(); // tên file ảnh, ví dụ: "sp01.jpg"
@@ -365,6 +365,11 @@ namespace PresentationLayer.Forms
                 }
             }
             reloadThanhTien(-1);
+        }
+
+        private void Productpnl_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
