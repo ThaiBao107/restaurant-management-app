@@ -23,7 +23,8 @@ namespace BusinessLayer.Services
             return categories.Select(c => new CategoryDTO
             {
                 CategoryID = c.CategoryID,
-                CategoryName = c.CategoryName
+                CategoryName = c.CategoryName,
+                Image = c.Image
             }).ToList();
         }
 
@@ -41,7 +42,8 @@ namespace BusinessLayer.Services
 
             var category = new Category
             {
-                CategoryName = categoryDTO.CategoryName
+                CategoryName = categoryDTO.CategoryName,
+                Image = categoryDTO.Image
             };
 
             _context.Add(category);
@@ -65,6 +67,7 @@ namespace BusinessLayer.Services
             }
 
             existingCategory.CategoryName = categoryDTO.CategoryName;
+            existingCategory.Image = categoryDTO.Image;
 
             _context.Update(existingCategory);
             _context.SaveChanges();
@@ -95,6 +98,12 @@ namespace BusinessLayer.Services
                 CategoryID = c.CategoryID,
                 CategoryName = c.CategoryName
             }).ToList();
+        }
+
+        public string  GetCategoryNameByID(int keyword)
+        {
+            var matchedCategories = _context.GetById(keyword);
+            return matchedCategories.CategoryName;
         }
     }
 }

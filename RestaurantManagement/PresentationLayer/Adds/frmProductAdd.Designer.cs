@@ -269,6 +269,7 @@
             this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.txtImage.TabIndex = 34;
             this.txtImage.TabStop = false;
+            this.txtImage.Click += new System.EventHandler(this.txtImage_Click);
             // 
             // btnBrowse
             // 

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,33 +31,46 @@ namespace PresentationLayer.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (id == 0)
+            if(txtNumber.Text == "")
             {
-                TableDTO tableDTO = new TableDTO { TableNumber = txtNumber.Text };
-                if (tableService.AddTable(tableDTO))
+                MessageBox.Show("Vui lòng điền đủ thông tin");
+                return;
+            }
+
+            try
+            {
+                if (id == 0)
                 {
-                    MessageBox.Show("Thêm thành công");
-                    this.DialogResult = DialogResult.OK;
+                    TableDTO tableDTO = new TableDTO { TableNumber = txtNumber.Text };
+                    if (tableService.AddTable(tableDTO))
+                    {
+                        MessageBox.Show("Thêm thành công");
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bàn đã tồn tại!");
+                        txtNumber.Clear();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Bàn đã tồn tại!");
-                    txtNumber.Clear();
+                    TableDTO tableDTO = new TableDTO { TableID = id, TableNumber = txtNumber.Text };
+                    if (tableService.UpdateTable(tableDTO))
+                    {
+                        MessageBox.Show("Cập nhật thành công");
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Trùng tên bàn!");
+                        txtNumber.Clear();
+                    }
                 }
             }
-            else
+            catch (SqlException ex)
             {
-                TableDTO tableDTO = new TableDTO { TableID = id, TableNumber = txtNumber.Text };
-                if (tableService.UpdateTable(tableDTO))
-                {
-                    MessageBox.Show("Cập nhật thành công");
-                    this.DialogResult = DialogResult.OK;
-                }
-                else
-                {
-                    MessageBox.Show("Trùng tên bàn!");
-                    txtNumber.Clear();
-                }
+                MessageBox.Show(ex.Message);
             }
         }
     }

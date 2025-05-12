@@ -19,5 +19,7 @@ namespace BusinessLayer.DTOs
         public string Image { get; set; }
         public bool IsAvailable { get; set; }
         public int CategoryID { get; set; }
+        //Tam thoi di
+        public int quatity { get; set; }
     }
 }

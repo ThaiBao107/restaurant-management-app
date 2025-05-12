@@ -1,9 +1,11 @@
 ﻿using BusinessLayer.DTOs;
 using DataLayer.Repositories;
+using RestaurantManagement.DAL;
 using RestaurantManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,10 +14,11 @@ namespace BusinessLayer.Services
     public class ProductService
     {
         private readonly Repository<Product> _context;
-
+        private readonly RestaurantDbContext restaurantDbContext;
         public ProductService()
         {
             _context = new Repository<Product>();
+            this.restaurantDbContext = new RestaurantDbContext();
         }
 
         // Lấy tất cả sản phẩm
@@ -102,5 +105,54 @@ namespace BusinessLayer.Services
                 CategoryID = p.CategoryID
             }).ToList();
         }
+
+
+
+        public List<DTOs.ProductDTO> getAllCategories(int categoriesID)
+        {
+
+            //where p.CategoryID == 1
+            try
+            {
+
+                if (categoriesID != -1)
+                {
+                    var query = (from p in this.restaurantDbContext.Products
+                                 where p.CategoryID == categoriesID
+                                 select new DTOs.ProductDTO 
+                                 {
+                                     ProductID = p.ProductID,
+                                     ProductName = p.ProductName,
+                                      Price = p.Price,
+                                     IsAvailable = p.IsAvailable,
+                                     Description = p.Description,
+                                     CategoryID = p.CategoryID,
+                                     Image = p.Image
+                                 }).ToList();
+                    return query;
+
+                }
+                else
+                {
+                    var products = this.restaurantDbContext.Products.Select(p => new DTOs.ProductDTO
+                    {
+                        ProductID = p.ProductID,
+                        ProductName = p.ProductName,
+                        Price = p.Price,
+                        IsAvailable = p.IsAvailable,
+                        Description = p.Description,
+                        CategoryID = p.CategoryID,
+                        Image= p.Image
+                    }).ToList();
+                    return products;
+                }
+
+
+            }
+            catch (Exception ex) { throw ex; }
+
+       
+        }
+
     }
 }
