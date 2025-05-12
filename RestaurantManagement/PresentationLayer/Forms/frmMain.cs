@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.Forms
 {
-    public partial class frmMain: Form
+    public partial class FrmMain: Form
     {
-        public frmMain()
+        public FrmMain()
         {
             InitializeComponent();
         }
@@ -30,39 +30,60 @@ namespace PresentationLayer.Forms
             f.Show();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void FrmMain_Load(object sender, EventArgs e)
         {
             lblUser.Text = AccountService.USER;
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void BtnHome_Click(object sender, EventArgs e)
         {
             AddControls(new frmHome());
         }
 
-        private void btnCategories_Click(object sender, EventArgs e)
+        private void BtnCategories_Click(object sender, EventArgs e)
         {
             AddControls(new frmCategoryView());
         }
 
-        private void btnTables_Click(object sender, EventArgs e)
+        private void BtnTables_Click(object sender, EventArgs e)
         {
             AddControls(new frmTableView());
         }
 
-        private void btnStaff_Click(object sender, EventArgs e)
+        private void BtnStaff_Click(object sender, EventArgs e)
         {
             AddControls(new frmStaffView());
         }
 
-        private void btnProducts_Click(object sender, EventArgs e)
+        private void BtnProducts_Click(object sender, EventArgs e)
         {
             AddControls(new frmProductView());
+        }
+
+        private void BtnReservation_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmReservationView());
+        }
+
+        private void BtnCustomer_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmCustomerView());
+        }
+
+        private void BtnPOS_Click(object sender, EventArgs e)
+        {
+            frmPOS frm = new frmPOS();
+            frm.ShowDialog();
+        }
+
+        private void BtnPromotion_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmPromotionView());
         }
     }
 }

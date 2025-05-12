@@ -36,9 +36,12 @@
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnBrowse = new Guna.UI2.WinForms.Guna2Button();
+            this.txtImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -49,7 +52,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(307, 83);
+            this.guna2Panel1.Size = new System.Drawing.Size(504, 83);
             this.guna2Panel1.TabIndex = 1;
             // 
             // label1
@@ -83,9 +86,9 @@
             this.guna2Panel2.Controls.Add(this.btnSave);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 219);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 405);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(307, 53);
+            this.guna2Panel2.Size = new System.Drawing.Size(504, 53);
             this.guna2Panel2.TabIndex = 2;
             // 
             // btnClose
@@ -154,11 +157,40 @@
             this.txtName.Size = new System.Drawing.Size(219, 36);
             this.txtName.TabIndex = 0;
             // 
+            // btnBrowse
+            // 
+            this.btnBrowse.AutoRoundedCorners = true;
+            this.btnBrowse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBrowse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBrowse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBrowse.ForeColor = System.Drawing.Color.White;
+            this.btnBrowse.Location = new System.Drawing.Point(328, 301);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(134, 39);
+            this.btnBrowse.TabIndex = 37;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // txtImage
+            // 
+            this.txtImage.FillColor = System.Drawing.Color.Gray;
+            this.txtImage.ImageRotate = 0F;
+            this.txtImage.Location = new System.Drawing.Point(328, 113);
+            this.txtImage.Name = "txtImage";
+            this.txtImage.Size = new System.Drawing.Size(134, 152);
+            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtImage.TabIndex = 36;
+            this.txtImage.TabStop = false;
+            // 
             // frmCategoryAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(307, 272);
+            this.ClientSize = new System.Drawing.Size(504, 458);
+            this.Controls.Add(this.btnBrowse);
+            this.Controls.Add(this.txtImage);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2Panel1);
@@ -172,6 +204,7 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,5 +220,7 @@
         public Guna.UI2.WinForms.Guna2Button btnSave;
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox txtName;
+        private Guna.UI2.WinForms.Guna2Button btnBrowse;
+        private Guna.UI2.WinForms.Guna2PictureBox txtImage;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.DTOs;
 using DataLayer.Repositories;
+using RestaurantManagement.DAL;
 using RestaurantManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,24 @@ namespace BusinessLayer.Services
     public class TableService
     {
         private readonly Repository<Table> _context;
-
+        private readonly RestaurantDbContext restaurantDbContext;
         public TableService()
         {
             _context = new Repository<Table>();
+            this.restaurantDbContext = new RestaurantDbContext();   
         }
+
+        public List<TableDTO> getTables()
+        {
+            var tables = this.restaurantDbContext.Tables.ToList();
+
+            return tables.Where(t => t.Status == TableStatus.Occupied).Select(t => new TableDTO
+            {
+                TableID = t.TableID,
+                TableNumber = t.TableNumber
+            }).ToList();
+        }
+
 
         public List<TableDTO> GetTables()
         {

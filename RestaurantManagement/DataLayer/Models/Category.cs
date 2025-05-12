@@ -12,6 +12,8 @@ namespace RestaurantManagement.DAL.Models
         public string CategoryName { get; set; }
         [Display(Name = "Mô tả chi tiết")]
         public string Description { get; set; }
+        public string Image { get; set; }
+
         public virtual ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

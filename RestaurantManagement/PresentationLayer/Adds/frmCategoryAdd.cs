@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,39 +28,78 @@ namespace PresentationLayer.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (id == 0)
+            if (txtName.Text == "")
             {
-                CategoryDTO categoryDTO = new CategoryDTO { CategoryName = txtName.Text };
-                if (categoryService.AddCategory(categoryDTO))
+                MessageBox.Show("Vui lòng điền đủ thông tin");
+                return;
+            }
+            
+            try
+            {
+                if (id == 0)
                 {
-                    MessageBox.Show("Thêm thành công");
-                    this.DialogResult = DialogResult.OK;
+                    CategoryDTO categoryDTO = new CategoryDTO { CategoryName = txtName.Text, Image = filePath };
+                    if (categoryService.AddCategory(categoryDTO))
+                    {
+                        MessageBox.Show("Thêm thành công");
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Dang mục đã tồn tại!");
+                        txtName.Clear();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Dang mục đã tồn tại!");
-                    txtName.Clear();
+                    CategoryDTO categoryDTO = new CategoryDTO { CategoryID = id, CategoryName = txtName.Text, Image = filePath };
+                    if (categoryService.UpdateCategory(categoryDTO))
+                    {
+                        MessageBox.Show("Cập nhật thành công");
+                        this.DialogResult = DialogResult.OK;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Trùng tên danh mục!");
+                        txtName.Clear();
+                    }
                 }
             }
-            else
+            catch (SqlException ex)
             {
-                CategoryDTO categoryDTO = new CategoryDTO {CategoryID = id ,CategoryName = txtName.Text };
-                if (categoryService.UpdateCategory(categoryDTO))
-                {
-                    MessageBox.Show("Cập nhật thành công");
-                    this.DialogResult = DialogResult.OK;
-                }
-                else
-                {
-                    MessageBox.Show("Trùng tên danh mục!");
-                    txtName.Clear();
-                }
+
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        string filePath;
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files (*.jpg;*.png)|*.jpg;*.png";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                // Tạo thư mục Images trong thư mục dự án (nếu chưa có)
+                string imagesFolder = Path.Combine(Application.StartupPath, "Images");
+                if (!Directory.Exists(imagesFolder))
+                    Directory.CreateDirectory(imagesFolder);
+
+                // Copy ảnh được chọn vào thư mục Images
+                string fileName = Path.GetFileName(ofd.FileName);
+                string destPath = Path.Combine(imagesFolder, fileName);
+                File.Copy(ofd.FileName, destPath, true);
+
+                // Gán ảnh cho PictureBox
+                txtImage.Image = new Bitmap(destPath);
+
+                // Lưu đường dẫn tương đối vào filePath
+                filePath = Path.Combine("Images", fileName);
+            }
         }
     }
 }

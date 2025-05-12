@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Services;
+﻿using BusinessLayer.DTOs;
+using BusinessLayer.Services;
 using PresentationLayer.Forms;
 using System;
 using System.Collections.Generic;
@@ -15,16 +16,46 @@ namespace PresentationLayer.Views
     public partial class frmProductView: Form
     {
         private ProductService productService;
+        private CategoryService categoryService;
+
         public frmProductView()
         {
             InitializeComponent();
             productService = new ProductService();
+            categoryService = new CategoryService();
         }
 
         private void LoadData()
         {
             dgvProduct.RowPostPaint += dgvProduct_RowPostPaint;
-            dgvProduct.DataSource = productService.GetProducts();
+
+            List<ProductDTO> products = productService.GetProducts();
+
+            DataTable table = new DataTable();
+            table.Columns.Add("ProductID", typeof(int));
+            table.Columns.Add("ProductName", typeof(string));
+            table.Columns.Add("Price", typeof(decimal));
+            table.Columns.Add("Description", typeof(string));
+            table.Columns.Add("IsAvailable", typeof(bool));
+            table.Columns.Add("Image", typeof(string));
+            table.Columns.Add("CategoryID", typeof(int));
+            table.Columns.Add("CategoryName", typeof(string)); 
+
+            foreach (var p in products)
+            {
+                table.Rows.Add(
+                    p.ProductID,
+                    p.ProductName,
+                    p.Price,
+                    p.Description,
+                    p.IsAvailable,
+                    p.Image,
+                    p.CategoryID,
+                    categoryService.GetCategoryNameByID(p.CategoryID)
+                );
+            }
+
+            dgvProduct.DataSource = table;
         }
 
 

@@ -20,7 +20,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -51,23 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202505031530198_create table.cs" />
-    <Compile Include="Migrations\202505031530198_create table.Designer.cs">
-      <DependentUpon>202505031530198_create table.cs</DependentUpon>
+    <Compile Include="Migrations\202505091827105_create table.cs" />
+    <Compile Include="Migrations\202505091827105_create table.Designer.cs">
+      <DependentUpon>202505091827105_create table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Ingredient.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Promotion.cs" />
-    <Compile Include="Models\Reservation.cs" />
-    <Compile Include="Models\Staff.cs" />
-    <Compile Include="Models\StaffAccount.cs" />
-    <Compile Include="Models\Supplier.cs" />
-    <Compile Include="Models\Table.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Ingredient.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\OrderDetail.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Promotion.cs" />
+    <Compile Include="Entities\Reservation.cs" />
+    <Compile Include="Entities\Staff.cs" />
+    <Compile Include="Entities\StaffAccount.cs" />
+    <Compile Include="Entities\Supplier.cs" />
+    <Compile Include="Entities\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -86,8 +86,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202505031530198_create table.resx">
-      <DependentUpon>202505031530198_create table.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202505091827105_create table.resx">
+      <DependentUpon>202505091827105_create table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

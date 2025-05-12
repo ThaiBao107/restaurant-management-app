@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -68,11 +68,35 @@
     <Compile Include="Adds\frmCategoryAdd.Designer.cs">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adds\frmCustomerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmCustomerAdd.Designer.cs">
+      <DependentUpon>frmCustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adds\frmOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmOrderDetails.Designer.cs">
+      <DependentUpon>frmOrderDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adds\frmProductAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Adds\frmProductAdd.Designer.cs">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adds\frmPromotionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmPromotionAdd.Designer.cs">
+      <DependentUpon>frmPromotionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adds\frmReservationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmReservationAdd.Designer.cs">
+      <DependentUpon>frmReservationAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Adds\frmStaffAdd.cs">
       <SubType>Form</SubType>
@@ -86,11 +110,11 @@
     <Compile Include="Adds\frmTableAdd.Designer.cs">
       <DependentUpon>frmTableAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Adds\SampleAdd.cs">
+    <Compile Include="Forms\frmBillList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Adds\SampleAdd.Designer.cs">
-      <DependentUpon>SampleAdd.cs</DependentUpon>
+    <Compile Include="Forms\frmBillList.Designer.cs">
+      <DependentUpon>frmBillList.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmHome.cs">
       <SubType>Form</SubType>
@@ -104,11 +128,29 @@
     <Compile Include="Forms\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmMain.cs">
+    <Compile Include="Forms\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTable.Designer.cs">
+      <DependentUpon>frmTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCreateOrder.Designer.cs">
+      <DependentUpon>frmCreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPOS.Designer.cs">
+      <DependentUpon>frmPOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,11 +165,29 @@
     <Compile Include="Views\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmCustomerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCustomerView.Designer.cs">
+      <DependentUpon>frmCustomerView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmProductView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\frmProductView.Designer.cs">
       <DependentUpon>frmProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPromotionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPromotionView.Designer.cs">
+      <DependentUpon>frmPromotionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmReservationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmReservationView.Designer.cs">
+      <DependentUpon>frmReservationView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmStaffView.cs">
       <SubType>Form</SubType>
@@ -141,17 +201,41 @@
     <Compile Include="Views\frmTableView.Designer.cs">
       <DependentUpon>frmTableView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SampleView.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Items\ucOrder.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\SampleView.Designer.cs">
-      <DependentUpon>SampleView.cs</DependentUpon>
+    <Compile Include="Items\ucOrder.Designer.cs">
+      <DependentUpon>ucOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucTable.Designer.cs">
+      <DependentUpon>ucTable.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Adds\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmCustomerAdd.resx">
+      <DependentUpon>frmCustomerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmOrderDetails.resx">
+      <DependentUpon>frmOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmProductAdd.resx">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmPromotionAdd.resx">
+      <DependentUpon>frmPromotionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmReservationAdd.resx">
+      <DependentUpon>frmReservationAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmStaffAdd.resx">
       <DependentUpon>frmStaffAdd.cs</DependentUpon>
@@ -159,8 +243,8 @@
     <EmbeddedResource Include="Adds\frmTableAdd.resx">
       <DependentUpon>frmTableAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Adds\SampleAdd.resx">
-      <DependentUpon>SampleAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmBillList.resx">
+      <DependentUpon>frmBillList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -168,8 +252,17 @@
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTable.resx">
+      <DependentUpon>frmTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCreateOrder.resx">
+      <DependentUpon>frmCreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPOS.resx">
+      <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -184,8 +277,17 @@
     <EmbeddedResource Include="Views\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCustomerView.resx">
+      <DependentUpon>frmCustomerView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPromotionView.resx">
+      <DependentUpon>frmPromotionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmReservationView.resx">
+      <DependentUpon>frmReservationView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmStaffView.resx">
       <DependentUpon>frmStaffView.cs</DependentUpon>
@@ -193,8 +295,14 @@
     <EmbeddedResource Include="Views\frmTableView.resx">
       <DependentUpon>frmTableView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SampleView.resx">
-      <DependentUpon>SampleView.cs</DependentUpon>
+    <EmbeddedResource Include="Items\ucOrder.resx">
+      <DependentUpon>ucOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucTable.resx">
+      <DependentUpon>ucTable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -263,7 +371,34 @@
   <ItemGroup>
     <None Include="Resources\Delete_S.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\5470230.png" />
+    <None Include="Resources\voucher.jpg" />
+    <None Include="Resources\thungrac.png" />
+    <None Include="Resources\nuocepduahau.jpg" />
+    <None Include="Resources\search1.jpg" />
+    <None Include="Resources\banh1.jpg" />
+    <None Include="Resources\sup11.jpg" />
+    <None Include="Resources\nuoc1.png" />
+    <None Include="Resources\pizza1.jpg" />
+    <None Include="Resources\54702301.png" />
+    <Content Include="Resources\banh.jpg" />
+    <Content Include="Resources\billl.png" />
+    <None Include="Resources\billl1.png" />
+    <None Include="Resources\connguoi.jpg" />
+    <None Include="Resources\datban.jpg" />
+    <Content Include="Resources\donhang.jpg" />
+    <Content Include="Resources\hu.jpg" />
+    <Content Include="Resources\monnuoc.jpg" />
+    <Content Include="Resources\nuoc.png" />
+    <Content Include="Resources\pizza.jpg" />
+    <Content Include="Resources\search.jpg" />
+    <Content Include="Resources\sup.png" />
+    <Content Include="Resources\sup1.jpg" />
+    <Content Include="Resources\taodonhang.png" />
+    <Content Include="Resources\thanhtoan.png" />
+    <Content Include="Resources\them.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -37,11 +37,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvEdit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.HireDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HireDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +62,11 @@
             this.dgvStaff.ColumnHeadersHeight = 40;
             this.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvStaff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvEdit,
+            this.dgvDel,
             this.dgvSTT,
             this.dgvId,
-            this.HireDate,
-            this.dgvEdit,
-            this.dgvDel});
+            this.HireDate});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -169,18 +169,6 @@
             this.txtSearch.TabIndex = 16;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // dgvDel
-            // 
-            this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvDel.FillWeight = 50F;
-            this.dgvDel.HeaderText = "";
-            this.dgvDel.Image = global::PresentationLayer.Properties.Resources.Delete_S;
-            this.dgvDel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvDel.MinimumWidth = 50;
-            this.dgvDel.Name = "dgvDel";
-            this.dgvDel.ReadOnly = true;
-            this.dgvDel.Width = 50;
-            // 
             // dgvEdit
             // 
             this.dgvEdit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -193,21 +181,17 @@
             this.dgvEdit.ReadOnly = true;
             this.dgvEdit.Width = 50;
             // 
-            // HireDate
+            // dgvDel
             // 
-            this.HireDate.DataPropertyName = "HireDate";
-            this.HireDate.HeaderText = "Ngày vào làm";
-            this.HireDate.Name = "HireDate";
-            this.HireDate.ReadOnly = true;
-            this.HireDate.Visible = false;
-            // 
-            // dgvId
-            // 
-            this.dgvId.DataPropertyName = "StaffID";
-            this.dgvId.HeaderText = "id";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Visible = false;
+            this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvDel.FillWeight = 50F;
+            this.dgvDel.HeaderText = "";
+            this.dgvDel.Image = global::PresentationLayer.Properties.Resources.Delete_S;
+            this.dgvDel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvDel.MinimumWidth = 50;
+            this.dgvDel.Name = "dgvDel";
+            this.dgvDel.ReadOnly = true;
+            this.dgvDel.Width = 50;
             // 
             // dgvSTT
             // 
@@ -218,6 +202,22 @@
             this.dgvSTT.Name = "dgvSTT";
             this.dgvSTT.ReadOnly = true;
             this.dgvSTT.Width = 70;
+            // 
+            // dgvId
+            // 
+            this.dgvId.DataPropertyName = "StaffID";
+            this.dgvId.HeaderText = "id";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Visible = false;
+            // 
+            // HireDate
+            // 
+            this.HireDate.DataPropertyName = "HireDate";
+            this.HireDate.HeaderText = "Ngày vào làm";
+            this.HireDate.Name = "HireDate";
+            this.HireDate.ReadOnly = true;
+            this.HireDate.Visible = false;
             // 
             // frmStaffView
             // 
@@ -248,11 +248,11 @@
         protected System.Windows.Forms.Label label2;
         protected System.Windows.Forms.Label label1;
         protected Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        public Guna.UI2.WinForms.Guna2DataGridView dgvStaff;
+        private System.Windows.Forms.DataGridViewImageColumn dgvEdit;
+        private System.Windows.Forms.DataGridViewImageColumn dgvDel;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSTT;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn HireDate;
-        private System.Windows.Forms.DataGridViewImageColumn dgvEdit;
-        private System.Windows.Forms.DataGridViewImageColumn dgvDel;
-        public Guna.UI2.WinForms.Guna2DataGridView dgvStaff;
     }
 }
