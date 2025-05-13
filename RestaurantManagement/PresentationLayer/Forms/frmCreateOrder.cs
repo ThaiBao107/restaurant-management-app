@@ -35,7 +35,7 @@ namespace PresentationLayer.Forms
             this.customerService = new CustomerService();   
             this.staffService =   new StaffService();
             if(soBan == "0")
-                this.idBan = 9;
+                this.idBan = 1;
             else
                 this.idBan = inBAN;
             this.AddOrders = new AddOrders();
@@ -66,7 +66,7 @@ namespace PresentationLayer.Forms
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            CustomerDTO result = customerService.CheckCustomerByPhone(txtSDT.Text.ToString());
+            string result = customerService.CheckCustomerByPhone(txtSDT.Text.ToString());
             if(result == null)
             {
                 MessageBox.Show("Không tìm thấy khách hàng");
@@ -74,7 +74,7 @@ namespace PresentationLayer.Forms
             else
             {
                 MessageBox.Show("Tìm thấy khách hàng");
-                txtMAKH.Text = result.FirstName;
+                txtMAKH.Text = result;
             }
         }
 

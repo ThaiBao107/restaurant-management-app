@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.DTOs;
 using DataLayer.Repositories;
+using RestaurantManagement.DAL;
 using RestaurantManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,12 @@ namespace BusinessLayer.Services
     public class CustomerService
     {
         private readonly Repository<Customer> _context;
+        private readonly RestaurantDbContext restaurantDbContext;
 
         public CustomerService()
         {
             _context = new Repository<Customer>();
+            this.restaurantDbContext = new RestaurantDbContext();
         }
 
         // Lấy danh sách danh mục
@@ -139,22 +142,44 @@ namespace BusinessLayer.Services
             return matchedCustomer.Phone;
         }
 
-        public CustomerDTO CheckCustomerByPhone(string phone)
+        public List<CustomerDTO> loadCustomer()
         {
-            
             try
             {
-                var customer = _context.GetAll().FirstOrDefault(p => p.Phone == phone);
-                return new CustomerDTO
-                {
-                    FirstName = customer.FirstName
-                };
+                var customer = (from c in this.restaurantDbContext.Customers
+                                select new DTOs.CustomerDTO
+                                {
+                                    CustomerID = c.CustomerID,
+                                    FirstName = c.FirstName,
+                                    LastName = c.LastName,
+                                    Phone = c.Phone,
+                                    Email = c.Email,
+                                    Address = c.Address,
+                                    LoyaltyPoints = c.LoyaltyPoints
+                                }).ToList();
+                return customer;
+
             }
-            catch (NullReferenceException ex)
+            catch (Exception ex) { throw ex; }
+        }
+
+        public string CheckCustomerByPhone(string phone)
+        {
+            try
             {
-                Console.WriteLine("Object null: " + ex.Message);
-                throw; // hoặc xử lý theo logic riêng
+                string result = "-1";
+                List<CustomerDTO> cus = this.loadCustomer();
+                foreach (var item in cus)
+                {
+                    if (phone.Equals(item.Phone) == true)
+                    {
+                        result = item.CustomerID.ToString();
+                        break;
+                    }
+                }
+                return result;
             }
+            catch(Exception ex) { throw ex; }
         }
     }
 }

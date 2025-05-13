@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adds\frmAccountAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmAccountAdd.Designer.cs">
+      <DependentUpon>frmAccountAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adds\frmCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Adds\frmCustomerAdd.Designer.cs">
       <DependentUpon>frmCustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adds\frmOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adds\frmOrderDetails.Designer.cs">
+      <DependentUpon>frmOrderDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Adds\frmProductAdd.cs">
       <SubType>Form</SubType>
@@ -153,6 +165,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RestaurantDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmAccontView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmAccontView.Designer.cs">
+      <DependentUpon>frmAccontView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmCategoryView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,11 +231,17 @@
     <Compile Include="Items\ucTable.Designer.cs">
       <DependentUpon>ucTable.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Adds\frmAccountAdd.resx">
+      <DependentUpon>frmAccountAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmCustomerAdd.resx">
       <DependentUpon>frmCustomerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adds\frmOrderDetails.resx">
+      <DependentUpon>frmOrderDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Adds\frmProductAdd.resx">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
@@ -265,6 +289,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\frmAccontView.resx">
+      <DependentUpon>frmAccontView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +391,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\5470230.png" />
+    <None Include="Resources\voucher.jpg" />
     <None Include="Resources\thungrac.png" />
     <None Include="Resources\nuocepduahau.jpg" />
     <None Include="Resources\search1.jpg" />
@@ -375,6 +403,8 @@
     <Content Include="Resources\banh.jpg" />
     <Content Include="Resources\billl.png" />
     <None Include="Resources\billl1.png" />
+    <None Include="Resources\connguoi.jpg" />
+    <None Include="Resources\datban.jpg" />
     <Content Include="Resources\donhang.jpg" />
     <Content Include="Resources\hu.jpg" />
     <Content Include="Resources\monnuoc.jpg" />

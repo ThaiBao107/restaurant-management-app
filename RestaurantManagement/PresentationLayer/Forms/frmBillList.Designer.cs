@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvOrder = new System.Windows.Forms.DataGridView();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.cusid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvrOrderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvrOrderDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvrTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.promotionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OrderDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +54,19 @@
             this.panel1.Size = new System.Drawing.Size(786, 94);
             this.panel1.TabIndex = 0;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.CustomClick = true;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(729, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(56, 36);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -69,8 +82,8 @@
             // 
             this.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cusid,
             this.dgvrOrderId,
-            this.dgvrOrderDate,
             this.dgvrTotal,
             this.promotionID,
             this.OrderDate,
@@ -85,34 +98,22 @@
             this.dgvOrder.TabIndex = 1;
             this.dgvOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrder_CellContentClick);
             // 
-            // btnExit
+            // cusid
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.CustomClick = true;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(729, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(56, 36);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.cusid.DataPropertyName = "customerid";
+            this.cusid.HeaderText = "customerid";
+            this.cusid.MinimumWidth = 6;
+            this.cusid.Name = "cusid";
+            this.cusid.Visible = false;
+            this.cusid.Width = 125;
             // 
             // dgvrOrderId
             // 
-            this.dgvrOrderId.DataPropertyName = "customerid";
-            this.dgvrOrderId.HeaderText = "customerid";
+            this.dgvrOrderId.DataPropertyName = "orderid";
+            this.dgvrOrderId.HeaderText = "OrderID";
             this.dgvrOrderId.MinimumWidth = 6;
             this.dgvrOrderId.Name = "dgvrOrderId";
-            this.dgvrOrderId.Visible = false;
             this.dgvrOrderId.Width = 125;
-            // 
-            // dgvrOrderDate
-            // 
-            this.dgvrOrderDate.DataPropertyName = "orderid";
-            this.dgvrOrderDate.HeaderText = "OrderID";
-            this.dgvrOrderDate.MinimumWidth = 6;
-            this.dgvrOrderDate.Name = "dgvrOrderDate";
             // 
             // dgvrTotal
             // 
@@ -154,6 +155,7 @@
             this.Status.HeaderText = "Status";
             this.Status.MinimumWidth = 6;
             this.Status.Name = "Status";
+            this.Status.Width = 125;
             // 
             // dgvrStatus
             // 
@@ -164,7 +166,7 @@
             this.dgvrStatus.Visible = false;
             this.dgvrStatus.Width = 125;
             // 
-            // BillList
+            // frmBillList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +174,7 @@
             this.Controls.Add(this.dgvOrder);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "BillList";
+            this.Name = "frmBillList";
             this.Text = "BillList";
             this.Load += new System.EventHandler(this.BillList_Load);
             this.panel1.ResumeLayout(false);
@@ -188,8 +190,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvOrder;
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cusid;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvrOrderId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvrOrderDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvrTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn promotionID;
         private System.Windows.Forms.DataGridViewTextBoxColumn OrderDate;

@@ -31,6 +31,32 @@ namespace PresentationLayer.Adds
             {
                 try
                 {
+                    if (string.IsNullOrWhiteSpace(txtFirstName.Text.Trim()) || string.IsNullOrWhiteSpace(txtLastName.Text.Trim()))
+                    {
+                        MessageBox.Show("Nhập đầy đủ họ tên", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(txtPhone.Text.Trim()))
+                    {
+                        MessageBox.Show("Nhập số điện thoại", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(txtPhone.Text.Trim()))
+                    {
+                        MessageBox.Show("Nhập email", "Chú ý", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    string address = txtAddress.Text.Trim();
+
+
+                    if (string.IsNullOrWhiteSpace(address))
+                    {
+                        address = "";
+                    }
+
 
                     CustomerDTO customer = new CustomerDTO
                     {
@@ -38,8 +64,10 @@ namespace PresentationLayer.Adds
                         LastName = txtLastName.Text.Trim(),
                         Phone = txtPhone.Text.Trim(),
                         Email = txtEmail.Text.Trim(),
-                        Address = txtAddress.Text.Trim()
+                        Address = address
                     };
+
+                    
 
                     bool result = customerService.AddCustomer(customer);
 
@@ -63,6 +91,14 @@ namespace PresentationLayer.Adds
                 try
                 {
 
+                    string address = txtAddress.Text.Trim();
+
+
+                    if (string.IsNullOrWhiteSpace(address))
+                    {
+                        address = "";
+                    }
+
                     CustomerDTO customer = new CustomerDTO
                     {
                         CustomerID = id,
@@ -70,7 +106,7 @@ namespace PresentationLayer.Adds
                         LastName = txtLastName.Text.Trim(),
                         Phone = txtPhone.Text.Trim(),
                         Email = txtEmail.Text.Trim(),
-                        Address = txtAddress.Text.Trim()
+                        Address = address
                     };
 
                     bool result = customerService.UpdateCustomer(customer);

@@ -115,5 +115,12 @@ namespace BusinessLayer.Services
                 Salary = s.Salary
             }).ToList();
         }
+
+        public string getStaffNameByID(int keyword)
+        {
+            var matchedStaff = _context.GetById(keyword);
+
+            return matchedStaff.FirstName;
+        }
     }
 }

@@ -45,7 +45,7 @@ namespace PresentationLayer.Forms
         {
             try
             {
-                var tables = tableService.GetTables();
+                var tables = tableService.getTables();
                 foreach ( var table in tables)
                 {
                     AddItemTables(table.TableID, table.TableNumber.ToString(), int.Parse(table.Capacity.ToString()));

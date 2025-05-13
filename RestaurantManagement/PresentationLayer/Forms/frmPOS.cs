@@ -116,15 +116,16 @@ namespace PresentationLayer.Forms
 
         }
 
-        private void LoadProducts(string fouder, int categoriesID)
+        private void LoadProducts(int categoriesID)
         {
 
-            var dt = productService.getAllProductByCategorieID(categoriesID);
+            var dt = productService.getAllCategories(categoriesID);
+          
             foreach (var i in dt)
             {
                 var imageName = i.Image.ToString(); // tên file ảnh, ví dụ: "sp01.jpg"
                 var imagePath = Path.Combine(Application.StartupPath, imageName);
-
+                
                 System.Drawing.Image img = null;
 
                 if (File.Exists(imagePath))
@@ -162,9 +163,10 @@ namespace PresentationLayer.Forms
         private void LoadData()
         {
             Productpnl.Controls.Clear();
-            LoadProducts("All", -1);
+            LoadProducts( -1);
             //dgvTotal = CustomDataGridView(dgvTotal);
-
+            listboxCate.DataSource = categoryService.GetCategories();
+            listboxCate.DisplayMember = "CategoryName";
             var pros = promotionService.loadPromotion();
             comboGiamGia.DataSource = pros;
             comboGiamGia.DisplayMember = "PromotionName";
@@ -208,7 +210,7 @@ namespace PresentationLayer.Forms
             else
             {
                 lbHinhThuc.Text = "Mua mang về";
-                lbBanSo.Visible = false;
+                lbBanSo.Text = "0";
             }
 
 
@@ -238,7 +240,7 @@ namespace PresentationLayer.Forms
 
         private void btnTaoDonHang_Click(object sender, EventArgs e)
         {
-            if (dgvTotal.Rows.Count > 0 && lbHinhThuc.Text.ToString() != "")
+            if (dgvTotal.Rows.Count > 0 && lbHinhThuc.Text.ToString() != "0")
             {
                 List<OrderDetailDTO> list = new List<OrderDetailDTO>();
                 for (int i = 0; i < dgvTotal.Rows.Count; i++)
@@ -317,35 +319,7 @@ namespace PresentationLayer.Forms
             }
         }
 
-        private void pizzabtn_Click(object sender, EventArgs e)
-        {
-            Productpnl.Controls.Clear();
-            LoadProducts("pizza", 4);
-        }
-
-        private void nuocbtn_Click(object sender, EventArgs e)
-        {
-            Productpnl.Controls.Clear();
-            LoadProducts("Nuoc", 1);
-        }
-
-        private void supbtn_Click(object sender, EventArgs e)
-        {
-            Productpnl.Controls.Clear();
-            LoadProducts("sup", 3);
-        }
-
-        private void banhngotbtn_Click(object sender, EventArgs e)
-        {
-            Productpnl.Controls.Clear();
-            LoadProducts("banhngot", 2);
-        }
-
-        private void allbtn_Click(object sender, EventArgs e)
-        {
-            Productpnl.Controls.Clear();
-            LoadProducts("All", -1);
-        }
+        
 
         private void dgvTotal_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -367,9 +341,17 @@ namespace PresentationLayer.Forms
             reloadThanhTien(-1);
         }
 
-        private void Productpnl_Paint(object sender, PaintEventArgs e)
+        private void listboxCate_SelectedIndexChanged(object sender, EventArgs e)
         {
+            var selectedCategory = listboxCate.SelectedItem as CategoryDTO;
+            Productpnl.Controls.Clear();
+            LoadProducts( selectedCategory.CategoryID);
+        }
 
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            Productpnl.Controls.Clear();
+            LoadProducts( -1);
         }
     }
 

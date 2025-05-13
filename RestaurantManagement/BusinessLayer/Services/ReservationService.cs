@@ -3,6 +3,7 @@ using DataLayer.Repositories;
 using RestaurantManagement.DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,8 +37,39 @@ namespace BusinessLayer.Services
             }).ToList();
         }
 
+        public void checkStatusTable(int tableID, ReservationStatus reser)
+        {
+            try
+            {
+                if(reser == ReservationStatus.Cancelled)
+                {
+                    string cn = "Data Source=.;Initial Catalog=RestaurantDB;Integrated Security=True;Encrypt=False";
+                    string sql = $"update tables set Status = 0 where TableID = '{tableID}'";
+                    SqlConnection cnn = new SqlConnection(cn);
+                    SqlCommand cmd = new SqlCommand(sql, cnn);
+                    cnn.Open();
+                    cmd.ExecuteNonQuery();
+                    cnn.Close();
+                }
+                else
+                {
+                    string cn = "Data Source=.;Initial Catalog=RestaurantDB;Integrated Security=True;Encrypt=False";
+                    string sql = $"update tables set Status = 1 where TableID = '{tableID}'";
+                    SqlConnection cnn = new SqlConnection(cn);
+                    SqlCommand cmd = new SqlCommand(sql, cnn);
+                    cnn.Open();
+                    cmd.ExecuteNonQuery();
+                    cnn.Close();
+                }
+                
+            }
+            catch (Exception ex) { throw ex; }
+        }
+
+
         public bool AddReservation(ReservationDTO reservationDTO)
         {
+
             var reservations = new Reservation
             {
                 ReservationID = reservationDTO.ReservationID,
@@ -47,9 +79,14 @@ namespace BusinessLayer.Services
                 NumberOfGuests = reservationDTO.NumberOfGuests,
                 Status = (ReservationStatus)reservationDTO.Status
             };
-
+            
             _context.Add(reservations);
             _context.SaveChanges();
+            if((ReservationStatus)reservationDTO.Status == ReservationStatus.Confirmed )
+                checkStatusTable(reservationDTO.TableID, ReservationStatus.Confirmed);
+            else if ((ReservationStatus)reservationDTO.Status == ReservationStatus.Cancelled)
+                checkStatusTable(reservationDTO.TableID, ReservationStatus.Cancelled);
+            
             return true;
         }
 
@@ -69,6 +106,11 @@ namespace BusinessLayer.Services
 
             _context.Update(existingReservation);
             _context.SaveChanges();
+
+            if ((ReservationStatus)reservationDTO.Status == ReservationStatus.Confirmed)
+                checkStatusTable(reservationDTO.TableID, ReservationStatus.Confirmed);
+            else if ((ReservationStatus)reservationDTO.Status == ReservationStatus.Cancelled)
+                checkStatusTable(reservationDTO.TableID, ReservationStatus.Cancelled);
             return true;
         }
 
